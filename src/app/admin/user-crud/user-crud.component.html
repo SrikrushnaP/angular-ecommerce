@@ -1,0 +1,229 @@
+<br>
+<div class="row">
+    <div class="col-md-10">
+        <strong>All User List</strong>
+    </div>
+    <div class="col-md-2"><button type="button" class="btn btn-dark float-right" (click)="addUserPopup()" data-toggle="modal"
+            data-target="#addEditUserModal">Add
+            New User</button></div>
+</div>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Mob</th>
+            <th scope="col">Email</th>
+            <th scope="col">DOB</th>
+            <th scope="col">City</th>
+            <th scope="col">Role</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user_data of all_user_data; let i = index">
+            <th scope="row">{{i+1}}</th>
+            <td>{{user_data.name}}</td>
+            <td>{{user_data.mobNumber}}</td>
+            <td>{{user_data.email}}</td>
+            <td>{{user_data.dob}}</td>
+            <td>{{user_data.address.city}}</td>
+            <td>{{user_data.role}}</td>
+            <td>
+                <span class="sim-pointer" (click)="editUserPopup(user_data.id)" data-toggle="modal" data-target="#addEditUserModal"><i
+                        class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                &nbsp;&nbsp;&nbsp;
+                <span class="sim-pointer" (click)="deleteUser(user_data.id)"><i class="fa fa-trash" aria-hidden="true"></i></span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+
+<!-- Modal for add and edit user  -->
+<div class="modal fade" id="addEditUserModal" tabindex="-1" role="dialog" aria-labelledby="addEditUserTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">{{popup_header}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <form [formGroup]="addEditUserForm">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" class="form-control" formControlName="name" [ngClass]="{'is-invalid':addEditUser && rf.name.errors}" />
+                                <div *ngIf="addEditUser && rf.name.errors" class="invalid-feedback">
+                                    <div *ngIf="rf.name.errors.required">Name is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Mobile Number</label>
+                                <input type="tel" class="form-control" formControlName="mobNumber" [ngClass]="{'is-invalid':addEditUser && rf.mobNumber.errors}"
+                                    numberOnly />
+                                <div *ngIf="addEditUser && rf.mobNumber.errors" class="invalid-feedback">
+                                    <div *ngIf="rf.mobNumber.errors.required">Mobile Number is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Enter Your Age</label>
+                                <input type="number" class="form-control" formControlName="age" [ngClass]="{'is-invalid':addEditUser && rf.age.errors}" />
+                                <div *ngIf="addEditUser && rf.age.errors" class="invalid-feedback">
+                                    <div *ngIf="rf.age.errors.required">Age is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>ENter Your DOB</label>
+                                <input type="date" class="form-control" formControlName="dob" [ngClass]="{'is-invalid':addEditUser && rf.dob.errors}" />
+                                <div *ngIf="addEditUser && rf.dob.errors" class="invalid-feedback" [ngClass]="{'is-invalid':addEditUser && rf.dob.errors}">
+                                    <div *ngIf="rf.dob.errors.required">Date Of Birth is required</div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Email</label>
+                                    <input type="email" class="form-control" placeholder="Email" formControlName="email"
+                                        [ngClass]="{'is-invalid':addEditUser && rf.email.errors}">
+                                    <div *ngIf="addEditUser && rf.email.errors" class="invalid-feedback">
+                                        <div *ngIf="rf.email.errors.required">Email is required</div>
+                                        <div *ngIf="rf.email.errors.email">Enter valid email</div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Password</label>
+                                    <input type="password" class="form-control" placeholder="Password" formControlName="password"
+                                        [ngClass]="{'is-invalid':addEditUser && rf.password.errors}">
+                                    <div *ngIf="addEditUser && rf.password.errors" class="invalid-feedback">
+                                        <div *ngIf="rf.password.errors.required">Password is required</div>
+                                        <div *ngIf="rf.password.errors.minlength">Name must be at least 6 characters</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddress">Address</label>
+                                <input type="text" class="form-control" placeholder="1234 Main St" formControlName="addLine1"
+                                    [ngClass]="{'is-invalid':addEditUser && rf.addLine1.errors}">
+                                <div *ngIf="addEditUser && rf.addLine1.errors" class="invalid-feedback">
+                                    <div *ngIf="rf.addLine1.errors.required">Addressline1 is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputAddress2">Address 2</label>
+                                <input type="text" class="form-control" placeholder="Apartment, studio, or floor"
+                                    formControlName="addLine2">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputCity">City</label>
+                                    <input type="text" class="form-control" formControlName="city" [ngClass]="{'is-invalid':addEditUser && rf.city.errors}">
+                                    <div *ngIf="addEditUser && rf.city.errors" class="invalid-feedback">
+                                        <div *ngIf="rf.city.errors.required">City is required</div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputState">State</label>
+                                    <select id="inputState" class="form-control" formControlName="state" [ngClass]="{'is-invalid':addEditUser && rf.state.errors}">
+                                        <option selected>Choose...</option>
+                                        <option>...</option>
+                                    </select>
+                                    <div *ngIf="addEditUser && rf.state.errors" class="invalid-feedback">
+                                        <div *ngIf="rf.state.errors.required">Select one option</div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="inputZip">Zip</label>
+                                    <input type="text" class="form-control" formControlName="zipCode" [ngClass]="{'is-invalid':addEditUser && rf.zipCode.errors}">
+                                    <div *ngIf="addEditUser && rf.zipCode.errors" class="invalid-feedback">
+                                        <div *ngIf="rf.zipCode.errors.required">Zipcode is required</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect2">Language You Know</label>
+                                <select multiple class="form-control" formControlName="language" [ngClass]="{'is-invalid':addEditUser && rf.language.errors}">
+                                    <option>English</option>
+                                    <option>Hindi</option>
+                                    <option>Oriya/Odiya</option>
+                                    <option>Bengali</option>
+                                    <option>Other</option>
+                                </select>
+                                <div *ngIf="addEditUser && rf.language.errors" class="invalid-feedback">
+                                    <div *ngIf="rf.language.errors.required">Select atleast one language</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect2">Gender</label><br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" formControlName="gender" value="Male"
+                                        [ngClass]="{'is-invalid':addEditUser && rf.gender.errors}">
+                                    <label class="form-check-label" for="inlineRadio1">Male</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" formControlName="gender" value="Female"
+                                        [ngClass]="{'is-invalid':addEditUser && rf.gender.errors}">
+                                    <label class="form-check-label" for="inlineRadio2">Female</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" formControlName="gender" value="Other"
+                                        disabled [ngClass]="{'is-invalid':addEditUser && rf.gender.errors}">
+                                    <label class="form-check-label" for="inlineRadio3">Other (disabled)</label>
+                                </div>
+                                <!-- <div *ngIf="addEditUser && rf.gender.errors" class="invalid-feedback">
+                                <div *ngIf="rf.gender.errors.required">Select gender</div>
+                              </div> -->
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlTextarea1">Something About You</label>
+                                <textarea class="form-control" rows="3" formControlName="aboutYou" [ngClass]="{'is-invalid':addEditUser && rf.aboutYou.errors}"></textarea>
+                                <div *ngIf="addEditUser && rf.aboutYou.errors" class="invalid-feedback">
+                                    <div *ngIf="rf.aboutYou.errors.required">Write something about you</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleFormControlFile1">Upload Your Photo</label>
+                                <span *ngIf="edit_user"><span>Uplload image</span><br>{{upload_file_name}} <span> <a
+                                            href="">Preview</a></span></span>
+                                <input type="file" class="form-control-file" formControlName="uploadPhoto" [ngClass]="{'is-invalid':addEditUser && rf.uploadPhoto.errors}">
+                                <div *ngIf="addEditUser && rf.uploadPhoto.errors" class="invalid-feedback">
+                                    <div *ngIf="rf.uploadPhoto.errors.required">Please upload file</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="roleSelect">Chose the rule</label>
+                                <select class="form-control" formControlName="role" [ngClass]="{'is-invalid':addEditUser && rf.role.errors}">
+                                    <option value="admin">admin</option>
+                                    <option value="seller">sheller</option>
+                                    <option value="buyer">buyer</option>
+                                </select>
+                                <div *ngIf="addEditUser && rf.role.errors" class="invalid-feedback">
+                                    <div *ngIf="rf.role.errors.required">Select one option</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" formControlName="agreetc" [ngClass]="{'is-invalid':addEditUser && rf.agreetc.errors}"
+                                        true>
+                                    <label class="form-check-label" for="gridCheck">
+                                        Agree our term and condition
+                                    </label>
+                                    <div *ngIf="addEditUser && rf.agreetc.errors" class="invalid-feedback">
+                                        <div *ngIf="rf.agreetc.errors.required">Accept term and cpndition</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-primary" (click)="addUser()" *ngIf="add_user">Register</button>
+                                <button class="btn btn-primary" (click)="updateUser()" *ngIf="edit_user">Update</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

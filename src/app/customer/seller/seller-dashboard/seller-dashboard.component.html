@@ -1,0 +1,77 @@
+<br>
+<div class="jumbotron p-4 p-md-4 text-white rounded bg-dark">
+    <div class="col-md-12 px-0">
+        <h3 class="display-4 font-italic">Welcome to seller dasboard</h3>
+        <p class="lead my-3">Seller can manage product and order details.</p>
+        <!-- <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p> -->
+    </div>
+</div>
+
+<div class="row mb-2">
+    <div class="col-md-6" (click)="sellerOrderDashboard()">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-primary">Order</strong>
+                <h3 class="mb-0">Manage orders</h3>
+                <div class="mb-1 text-muted">Lats order Date: <strong>{{last_order_date}}</strong></div>
+                <div class="progressbar-div">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">Pending</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25"
+                            aria-valuemin="0" aria-valuemax="100">Processed</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50"
+                            aria-valuemin="0" aria-valuemax="100">Reajected</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                    <title>Manage orders</title>
+                    <rect width="100%" height="100%" fill="#55595c" /><text x="30%" y="50%" fill="#eceeef" dy=".3em">
+                        Tatal Orders: {{total_order}}
+                    </text>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6" (click)="sellerProductDashboard()">
+        <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2 text-success">Products</strong>
+                <h3 class="mb-0">Manage Products</h3>
+                <!-- <div class="mb-1 text-muted">Last Product Update: <strong> Nov 11</strong></div> -->
+                <div class="progressbar-div">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" [style.width.%]="publish_product"
+                            aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Published: {{publish_product}}</div>
+                    </div>
+                    <br>
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" [ngStyle]="{'width.%': inactive_product}"
+                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Inactive: {{inactive_product}}</div>
+                    </div>
+                    <br>
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" [ngStyle]="{'width.%': draft_product}"
+                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Draft: {{draft_product}}</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
+                    preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+                    <title>Manage Products</title>
+                    <rect width="100%" height="100%" fill="#55595c" /><text x="10%" y="50%" fill="#eceeef" dy=".3em">
+                        Total Products: {{total_product}}
+                    </text>
+                </svg>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,116 @@
+<br>
+<div class="row">
+    <div class="col-md-10">
+        <strong>All Product List</strong>
+    </div>
+    <div class="col-md-2">
+        <button type="button" class="btn btn-dark float-right" (click)="addProductPopup()" data-toggle="modal"
+            data-target="#addEditProductModal">
+            Add New Product
+        </button>
+    </div>
+</div>
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Product Name</th>
+            <!-- <th scope="col">Display Image</th> -->
+            <th scope="col">MRP</th>
+            <th scope="col">DP</th>
+            <!-- <th scope="col">Description</th> -->
+            <th scope="col">Status</th>
+            <th scope="col">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product_data of all_product_data; let i = index">
+            <th scope="row">{{i+1}}</th>
+            <td>{{product_data.name}}</td>
+            <!-- <td>{{product_data.uploadPhoto}}</td> -->
+            <td>{{product_data.mrp}}</td>
+            <td>{{product_data.dp}}</td>
+            <!-- <td>{{product_data.productDesc}}</td> -->
+            <td>{{product_data.status}}</td>
+            <td>
+                <span class="sim-pointer" (click)="editProductPopup(product_data.id)" data-toggle="modal" data-target="#addEditProductModal"><i
+                        class="fa fa-pencil-square-o" aria-hidden="true"></i></span>
+                &nbsp;&nbsp;&nbsp;
+                <span class="sim-pointer" (click)="deleteProduct(product_data.id)"><i class="fa fa-trash" aria-hidden="true"></i></span>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- Modal for add and edit user  -->
+<div class="modal fade" id="addEditProductModal" tabindex="-1" role="dialog" aria-labelledby="addEditUserTitle"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">{{popup_header}}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <form [formGroup]="addEditProductForm">
+                            <div class="form-group">
+                                <label for="productName">Product Name</label>
+                                <input type="text" class="form-control" formControlName="name" [ngClass]="{'is-invalid':addEditProduct && rf.name.errors}" />
+                                <div *ngIf="addEditProduct && rf.name.errors" class="invalid-feedback">
+                                    <div *ngIf="rf.name.errors.required">Name is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="productImage">Product Image URL</label>
+                                <input type="url" class="form-control" formControlName="uploadPhoto" [ngClass]="{'is-invalid':addEditProduct && rf.uploadPhoto.errors}">
+                                <div *ngIf="addEditProduct && rf.uploadPhoto.errors" class="invalid-feedback">
+                                    <div *ngIf="rf.uploadPhoto.errors.required">Please upload file</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="productDescription">Description</label>
+                                <textarea class="form-control" rows="3" formControlName="productDesc" [ngClass]="{'is-invalid':addEditProduct && rf.productDesc.errors}"></textarea>
+                                <div *ngIf="addEditProduct && rf.productDesc.errors" class="invalid-feedback">
+                                    <div *ngIf="rf.productDesc.errors.required">Write something about product</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="productMRP">MRP</label>
+                                <input type="text" class="form-control" formControlName="mrp" [ngClass]="{'is-invalid':addEditProduct && rf.mrp.errors}" />
+                                <div *ngIf="addEditProduct && rf.mrp.errors" class="invalid-feedback">
+                                    <div *ngIf="rf.mrp.errors.required">MRP is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="productDP">DP</label>
+                                <input type="text" class="form-control" formControlName="dp" [ngClass]="{'is-invalid':addEditProduct && rf.dp.errors}" />
+                                <div *ngIf="addEditProduct && rf.dp.errors" class="invalid-feedback">
+                                    <div *ngIf="rf.dp.errors.required">DP is required</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="productStatus">Status</label>
+                                <select class="form-control" formControlName="status" [ngClass]="{'is-invalid':addEditProduct && rf.status.errors}">
+                                    <option value="draft">Draft</option>
+                                    <option value="publish">Publish</option>
+                                    <option value="inactive">Inactive</option>
+                                </select>
+                                <div *ngIf="addEditProduct && rf.status.errors" class="invalid-feedback">
+                                    <div *ngIf="rf.status.errors.required">Select one option</div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-primary" (click)="addNewProduct()" *ngIf="add_product">Add New</button>
+                                <button class="btn btn-primary" (click)="updateProduct()" *ngIf="edit_product">Update</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
