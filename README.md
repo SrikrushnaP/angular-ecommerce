@@ -6,23 +6,26 @@ Ecommerce portal where some of the user(Seller) who want to sell the product and
 
 **Step 2:** ``` cd angular-ecommerce ```
 
- **Step 3:** ``` git pull origin develop ``` 
+ **Step 3:** ``` git pull origin develop ``` or ``` master ``` 
 
-**Step 4:** ``` npm install ```
+**Step 4:** Install Node form  https://nodejs.org/en/
 
-**Step 5:** ``` npm install -g json-server ``` (Install JSON mock server)
+**Step 5:** ``` npm install ```
 
+**Step 6:** ``` npm install -g json-server ``` (Install JSON mock server)
 
-**Step 6:** Open two terminal/command prompt  
+**Step 7:** ```npm install -g @angular/cli ``` (Install angular CLI)
 
-**Step 6.1:** In one run command:   ``` ng serve ```
+**Step 8:** Open two terminal/command prompt  
 
-**Step 6.2:** Another one run command:  ``` json-server --watch mock-api-data.json ```
+**Step 9:** In one run command:   ``` ng serve ```
+
+**Step 10:** Another one run command:  ``` json-server --watch mock-api-data.json ```
 
 
 Now you can ready to go 
 
-**Step 7:** Open your browser and type: http://localhost:4200
+**Step 11:** Open your browser and type: http://localhost:4200
 
 If you want to see the mock api on your browser you can hit the link: http://localhost:3000/
 
