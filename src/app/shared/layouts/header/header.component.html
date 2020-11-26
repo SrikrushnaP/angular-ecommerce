@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <a class="navbar-brand" href="#">{{'header.ecommerce' | translate}}</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    <button mat-button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -23,11 +23,6 @@
             <!-- <li class="nav-item">
                 <a class="nav-link" href="#">{{'header.service' | translate}}</a>
             </li> -->
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
-                    {{'header.about_us' | translate}}
-                </a>
-            </li>
             
             <li class="nav-item" *ngIf="user_role == 'buyer'">
                     <a class="nav-link" routerLink="/my-order">{{'header.order' | translate}}</a>
@@ -49,8 +44,8 @@
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="{{'header.search' | translate}}" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">{{'header.search' | translate}}</button>
+            <input matInput class="form-control mr-sm-2" type="search" placeholder="{{'header.search' | translate}}" aria-label="Search">
+            <button mat-button class="btn btn-outline-success my-2 my-sm-0" type="submit">{{'header.search' | translate}}</button>
         </form>
         <ul class="navbar-nav ml-auto" *ngIf="!logged_in">
             <li class="nav-item">

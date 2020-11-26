@@ -4,6 +4,9 @@ import { RouterModule, Router } from '@angular/router';
 import { LoginSignupService } from '../../shared/services/login-signup.service';
 import { User } from '../../core/models/object-model';
 
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+
 @Component({
   selector: 'app-signin-signup',
   templateUrl: './signin-signup.component.html',
