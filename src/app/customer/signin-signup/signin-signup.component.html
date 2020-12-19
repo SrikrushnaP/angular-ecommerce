@@ -97,8 +97,8 @@
                         <select multiple class="form-control" formControlName="language" [ngClass]="{'is-invalid':signUpsubmitted && rf.language.errors}">
                             <option>English</option>
                             <option>Hindi</option>
-                            <option>Oriya/Odiya</option>
-                            <option>Bengali</option>
+                            <option>Spanish</option>
+                            <option>Mandarin</option>
                             <option>Other</option>
                         </select>
                         <div *ngIf="signUpsubmitted && rf.language.errors" class="invalid-feedback">
@@ -120,7 +120,7 @@
                         <div class="form-check form-check-inline">
                             <input matInput class="form-check-input" type="radio" formControlName="gender" value="Other"
                                 disabled [ngClass]="{'is-invalid':signUpsubmitted && rf.gender.errors}">
-                            <label class="form-check-label" for="inlineRadio3">Other (disabled)</label>
+                            <label class="form-check-label" for="inlineRadio3">Other</label>
                         </div>
                         <!-- <div *ngIf="signUpsubmitted && rf.gender.errors" class="invalid-feedback">
               <div *ngIf="rf.gender.errors.required">Select gender</div>
