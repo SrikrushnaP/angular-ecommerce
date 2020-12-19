@@ -1,8 +1,7 @@
 {
     "intro": "Welcome to the world of Internationalization",
-    "proj_name": "B2B Ecommerce Portal",
-    "project_short_desc": "This project is like ecommerce portal where some of the user(Seller) who want to sell the product and services using this and some of the user(Buyer/End User) who needs the product they can buy from the user(Seller). On top of this two user there is another user(Admin) we named as admin, who have control all the operation like, he/she can delete the product, buyer, seller, can edit and update also. ",
-    "view_detail_doc_btn": "View Detailed Documentation",
+    "proj_name": "Talos",
+    "project_short_desc": "B2B marketplace of industrial machines, services and equipments",
     "header": {
         "ecommerce": "Ecommerce 2.0",
         "lang_en": "English(अंग्रेज़ी)",
@@ -23,8 +22,6 @@
     },
     "footer": {
         "year": "2019",
-        "d&d_by": "Designed and developed by",
-        "my_name": "Srikrushna Pal",
         "tc": "Terms and condition of usages"
     }
 }
