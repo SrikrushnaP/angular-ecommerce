@@ -15,8 +15,9 @@
                         {{product.dp}}</span></p>
                 <br>
                 <p class="card-text product-desc">{{product.productDesc}}</p>
-                <button mat-button class="btn btn-primary float-left" (click)="addToCart()">Add to Cart</button>
-                <button mat-button class="btn btn-primary float-right" (click)="buyProduct(product.id)">Buy Now</button>
+                <div>
+                <button mat-button class="btn btn-primary float-left" (click)="addToCart()">Add to Cart</button> 
+                <button mat-button class="btn btn-primary float-right" (click)="buyProduct(product.id)">Buy Now</button></div>
             </div>
         </div>
     </div>

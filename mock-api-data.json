@@ -160,6 +160,30 @@
       },
       "contact": "09040398006",
       "dateTime": "18/07/2019"
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "sellerId": 2,
+      "product": {
+        "id": 3,
+        "name": "Pro kit Arduino",
+        "uploadPhoto": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR8BtoTvSjwvjPFLKO35K8IM5yFY4EPewcZ1mAXbjhRityyvUKMv4BpO6fKcXbhgnhm6nQrZqS4Drh1ZgM56DVzL1UM1Oe8kvjZwz1iGLYyEovU2bRQp62uXA&usqp=CAE",
+        "productDesc": "Arduino kit with advanced modules",
+        "mrp": "500",
+        "dp": "399",
+        "status": "draft"
+      },
+      "deliveryAddress": {
+        "id": 0,
+        "addLine1": "Marathalli",
+        "addLine2": "Aswathnagar",
+        "city": "Bangalore",
+        "state": "Choose...",
+        "zipCode": 560037
+      },
+      "contact": "0123456789",
+      "dateTime": "03/01/2021"
     }
   ]
 }
