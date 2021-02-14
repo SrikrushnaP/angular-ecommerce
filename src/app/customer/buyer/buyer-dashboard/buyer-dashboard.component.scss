@@ -11,10 +11,16 @@
                 overflow: hidden;
             //   text-overflow:ellipsis;
             }
+            .float-right{
+                font-size: 22px;
+            }
             .card-title{
                 white-space: nowrap; 
                 overflow: hidden;
                 text-overflow:ellipsis;
+            }
+            .card-text{
+                opacity: .5;
             }
         }
     }
