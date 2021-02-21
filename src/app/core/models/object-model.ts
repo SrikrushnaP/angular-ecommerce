@@ -29,6 +29,7 @@ export class Product {
     name: string;
     uploadPhoto: string;
     productDesc: string;
+    currency: string;
     mrp: number;
     dp: number;
     status: boolean;

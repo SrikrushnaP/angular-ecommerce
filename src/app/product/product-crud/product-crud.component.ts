@@ -66,6 +66,7 @@ export class ProductCrudComponent implements OnInit {
       name: this.product_data.name,
       uploadPhoto: this.product_data.uploadPhoto,
       productDesc: this.product_data.productDesc,
+      currency: this.product_data.currency,
       mrp: this.product_data.mrp,
       dp: this.product_data.dp,
       status: this.product_data.status
@@ -92,6 +93,7 @@ export class ProductCrudComponent implements OnInit {
         name: this.single_product_data.name,
         // uploadPhoto: '',
         uploadPhoto: this.single_product_data.uploadPhoto,
+        currency: this.single_product_data.currency,
         productDesc: this.single_product_data.productDesc,
         mrp: this.single_product_data.mrp,
         dp: this.single_product_data.dp,
@@ -111,6 +113,7 @@ export class ProductCrudComponent implements OnInit {
       id: 0,
       name: this.product_data.name,
       uploadPhoto: this.product_data.uploadPhoto,
+      currency: this.product_data.currency,
       productDesc: this.product_data.productDesc,
       mrp: this.product_data.mrp,
       dp: this.product_data.dp,

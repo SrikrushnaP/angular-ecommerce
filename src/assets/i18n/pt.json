@@ -1,0 +1,28 @@
+{
+    "intro": "Bem vindo ao sistema de Internacionalização",
+    "proj_name": "Talos",
+    "project_short_desc": "Um Marketplace B2B de equipamentos e maquinas industriais",
+    "header": {
+        "ecommerce": "Ecommerce 2.0",
+        "lang_en": "English(अंग्रेज़ी)",
+        "lang_hn": "Hindi(हिंदी)",
+        "lang_pt": "Português",
+        "home": "Pagina principal",
+        "service": "Servicos",
+        "about_us": "Sobre nós",
+        "contact_us": "Contato",
+        "order": "Pedido",
+        "product": "Produtos",
+        "user": "Usuarios",
+        "search": "Pesquise",
+        "signin": "Login",
+        "signup": "Cadastro",
+        "my_profile": "Meu Perfil",
+        "logout": "Sair",
+        "signout": "Sair"
+    },
+    "footer": {
+        "year": "2019",
+        "tc": "Termos de uso"
+    }
+}

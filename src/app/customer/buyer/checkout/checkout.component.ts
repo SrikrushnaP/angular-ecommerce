@@ -55,6 +55,7 @@ export class CheckoutComponent implements OnInit {
         name: this.individual_product.name,
         uploadPhoto: this.individual_product.uploadPhoto,
         productDesc: this.individual_product.productDesc,
+        currency: this.individual_product.currency,
         mrp: this.individual_product.mrp,
         dp: this.individual_product.dp,
         status: this.individual_product.status

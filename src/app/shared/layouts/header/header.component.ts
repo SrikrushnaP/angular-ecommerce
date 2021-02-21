@@ -38,6 +38,9 @@ export class HeaderComponent implements OnInit {
     } else if (language == 'hn') {
       this.language = "हिंदी(Hindi)";
     }
+    else if (language == 'pt') {
+      this.language = "Português";
+    }
   }
 
   logOut() {

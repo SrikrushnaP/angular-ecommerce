@@ -80,7 +80,8 @@
       "productDesc": "can cook, dry and sterilise up to 2000 litres",
       "mrp": "1800",
       "dp": "850",
-      "status": "publish"
+      "status": "publish",
+      "currency": "EUR"
     },
     {
       "id": 2,
@@ -90,6 +91,8 @@
       "mrp": "1250",
       "dp": "900",
       "status": "publish"
+      ,
+      "currency": "USD"
     },
     {
       "id": 3,
@@ -98,7 +101,8 @@
       "productDesc": "Arduino kit with advanced modules",
       "mrp": "500",
       "dp": "399",
-      "status": "draft"
+      "status": "draft",
+      "currency": "EUR"
     },
     {
       "id": 4,
@@ -107,7 +111,8 @@
       "productDesc": "Special Machine for outfit and fashion industry",
       "mrp": "500",
       "dp": "399",
-      "status": "draft"
+      "status": "draft",
+      "currency": "USD"
     },
     {
       "id": 5,
@@ -115,7 +120,8 @@
       "uploadPhoto": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ1lnNCmty85BgiZD8YznL38iD_hvzzSAi8yxBQ-7WI8BH8JJbvUcXdWkK8GS5WpEc6nrCUYPg_xWN_Q4bVnwhqYE5ajB5__ZVkMuXtMj9rkDKXBlfjjfP3&usqp=CAE ",
       "mrp": "3999",
       "dp": "2199",
-      "status": "inactive"
+      "status": "inactive",
+      "currency": "GBP"
     },
     {
       "id": 6,
@@ -124,7 +130,8 @@
       "productDesc": "Industrial robot for solding components",
       "mrp": "1000",
       "dp": "499",
-      "status": "publish"
+      "status": "publish",
+      "currency": "GBP"
     },
     {
       "id": 7,
@@ -133,7 +140,8 @@
       "productDesc": "Computer for industrial purpose",
       "mrp": "1369",
       "dp": "1289",
-      "status": "publish"
+      "status": "publish",
+      "currency": "USD"
     }
   ],
   "orders": [
