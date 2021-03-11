@@ -20,7 +20,7 @@ export class Address {
     addLine1: string;
     addLine2: string;
     city: string;
-    state: string;
+    country: string;
     zipCode: number;
 }
 

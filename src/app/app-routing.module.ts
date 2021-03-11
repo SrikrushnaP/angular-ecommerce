@@ -16,9 +16,10 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/", pathMatch: "full" },
-  { path: "", component: HomeComponent },
+  { path: "", component: BuyerDashboardComponent },
   { path: "my-profile", component: UserProfileComponent },
   { path: "contact-us", component:ContactUsComponent},
+  { path: "home", component:HomeComponent},
   //Path/component you want to access before admin login/signin
   {
     path: '', canActivate: [AdminAuthGuardLogin], children: [

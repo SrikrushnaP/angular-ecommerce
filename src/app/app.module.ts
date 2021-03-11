@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTableModule} from '@angular/material/table';
+import{MatIconModule} from "@angular/material/icon";
 
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
@@ -41,6 +42,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatButtonModule,
     MatInputModule,
     MatTableModule,
+    MatIconModule,
     SharedModule,
     FormsModule,
     ReactiveFormsModule,

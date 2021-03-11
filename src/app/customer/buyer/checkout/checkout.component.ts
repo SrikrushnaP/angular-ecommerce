@@ -65,7 +65,7 @@ export class CheckoutComponent implements OnInit {
         addLine1: this.user_address.addLine1,
         addLine2: this.user_address.addLine2,
         city: this.user_address.city,
-        state: this.user_address.state,
+        country: this.user_address.country,
         zipCode: Number(this.user_address.zipCode)
       },
       contact: this.user_contact_no,

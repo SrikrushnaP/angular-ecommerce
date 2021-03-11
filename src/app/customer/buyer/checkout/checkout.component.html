@@ -18,7 +18,7 @@
                         <img src="{{individual_product?.uploadPhoto}}" class="card-img-top" alt="{{individual_product?.name}}">
                     </div>
                     <div class="col-md-8">
-                        <h4 class="card-title">{{individual_product?.name}}</h4>
+                        <h2 class="card-title">{{individual_product?.name}}</h2>
                         <br>
                         <p class="card-text product-desc">{{individual_product?.productDesc}}</p>
                         <p><span class="float-left"><strong>MRP</strong>: <del>{{individual_product?.mrp}}</del></span>
@@ -31,6 +31,7 @@
                 <a href="#" class="btn btn-primary">Go somewhere</a> -->
             </div>
         </div>
+        <app-comment></app-comment>
     </div>
     <div class="col-md-4">
         <div class="card">
@@ -40,7 +41,7 @@
             <div class="card-body">
                 <h5 class="card-title">{{user_address?.name}}</h5>
                 <p class="card-text">{{user_address?.addLine1}},{{user_address?.addLine2}}</p>
-                <p class="card-text">{{user_address?.city}},{{user_address?.state}}</p>
+                <p class="card-text">{{user_address?.city}},{{user_address?.country}}</p>
                 <p class="card-text">Postal Code: {{user_address?.zipCode}}</p>
                 <p class="card-text">Contact Number: {{user_contact_no}}</p>
                 <button mat-button class="btn btn-primary"(click)="placeOrder()">Deliver Here</button>

@@ -14,7 +14,15 @@
                 <p><span class="float-left"><strong>MRP</strong>: <del>{{product.mrp}} ${{product.currency}}</del></span> <span class="float-right"><strong>DP</strong>:
                         {{product.dp}} ${{product.currency}}</span></p>
                 <br>
-                <p class="card-text product-desc">{{product.productDesc}}</p>
+                <p class="card-text product-desc">{{product.productDesc}} <b>{{product.brand}}</b></p>
+                <div class="rating">
+                    <mat-icon>star</mat-icon>
+                    <mat-icon>star</mat-icon>
+                    <mat-icon>star</mat-icon>
+                    <mat-icon>star</mat-icon>
+                    <mat-icon>star_half</mat-icon>
+                  </div>
+                
                 <div>
                 <button mat-button class="btn btn-primary float-left" (click)="addToCart()">Add to Cart</button> 
                 <button mat-button class="btn btn-primary float-right" (click)="buyProduct(product.id)">Buy Now</button></div>

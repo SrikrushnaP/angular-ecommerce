@@ -10,8 +10,8 @@
       "address": {
         "addLine1": "Marathalli",
         "addLine2": "Aswathnagar",
-        "city": "Bangalore",
-        "state": "Choose...",
+        "city": "Ho Chi Min city",
+        "country": "India",
         "zipCode": "560037"
       },
       "language": [
@@ -37,7 +37,7 @@
         "addLine1": "Marathalli",
         "addLine2": "Aswathnagar",
         "city": "Bangalore",
-        "state": "Choose...",
+        "country": "Vietman",
         "zipCode": "560037"
       },
       "language": [
@@ -62,8 +62,8 @@
         "id": 0,
         "addLine1": "Marathalli",
         "addLine2": "Aswathnagar",
-        "city": "Bangalore",
-        "state": "Choose...",
+        "city": "Instanbul",
+        "country": "Turkey",
         "zipCode": "560037"
       },
       "aboutYou": "djdhjdh",
@@ -80,6 +80,7 @@
       "productDesc": "can cook, dry and sterilise up to 2000 litres",
       "mrp": "1800",
       "dp": "850",
+      "brand": "3M",
       "status": "publish",
       "currency": "EUR"
     },
@@ -90,58 +91,20 @@
       "productDesc": "3D printer for projects of design and hardware in large scale",
       "mrp": "1250",
       "dp": "900",
-      "status": "publish"
-      ,
+      "brand": "Panasonic",
+      "status": "publish",
       "currency": "USD"
     },
     {
       "id": 3,
-      "name": "Pro kit Arduino",
-      "uploadPhoto": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR8BtoTvSjwvjPFLKO35K8IM5yFY4EPewcZ1mAXbjhRityyvUKMv4BpO6fKcXbhgnhm6nQrZqS4Drh1ZgM56DVzL1UM1Oe8kvjZwz1iGLYyEovU2bRQp62uXA&usqp=CAE",
-      "productDesc": "Arduino kit with advanced modules",
-      "mrp": "500",
-      "dp": "399",
-      "status": "draft",
-      "currency": "EUR"
-    },
-    {
-      "id": 4,
-      "name": "Sewing machine",
-      "uploadPhoto": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQommOzM_33N3Fq00fiiJEkDF0bhU-3u3kc4Mqw2dg11j76lEjbXBOSa25EZuS7ZgIxDInCWh6LfckMRM8O0HxP9Q3neO1kx-latAq752h1EPoFpVdYpwSD5Q&usqp=CAE",
-      "productDesc": "Special Machine for outfit and fashion industry",
-      "mrp": "500",
-      "dp": "399",
-      "status": "draft",
-      "currency": "USD"
-    },
-    {
-      "id": 5,
-      "name": "Industrial air compressor",
-      "uploadPhoto": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ1lnNCmty85BgiZD8YznL38iD_hvzzSAi8yxBQ-7WI8BH8JJbvUcXdWkK8GS5WpEc6nrCUYPg_xWN_Q4bVnwhqYE5ajB5__ZVkMuXtMj9rkDKXBlfjjfP3&usqp=CAE ",
-      "mrp": "3999",
-      "dp": "2199",
-      "status": "inactive",
-      "currency": "GBP"
-    },
-    {
-      "id": 6,
       "name": "OTC FD-V8 6-Axis Robot",
       "uploadPhoto": "https://www.eurobots.net/media/robot/det_685_otc-daihen-almega-ax-v6_arc_welding.jpg",
       "productDesc": "Industrial robot for solding components",
       "mrp": "1000",
       "dp": "499",
+      "brand": "Eurobots",
       "status": "publish",
       "currency": "GBP"
-    },
-    {
-      "id": 7,
-      "name": "NTC Mini-ITX 1101, Intel Celeron J1800, 4GB, SSD 60GB, Windows 10 Pro - 15993",
-      "uploadPhoto": "https://images2.kabum.com.br/produtos/fotos/102012/computador-ntc-mini-itx-1101-intel-celeron-j1800-4gb-ssd-60gb-windows-10-pro-15993_1558457646_gg.jpg",
-      "productDesc": "Computer for industrial purpose",
-      "mrp": "1369",
-      "dp": "1289",
-      "status": "publish",
-      "currency": "USD"
     }
   ],
   "orders": [
@@ -163,7 +126,7 @@
         "addLine1": "Marathalli",
         "addLine2": "Aswathnagar",
         "city": "Bangalore",
-        "state": "Choose...",
+        "country": "Choose...",
         "zipCode": 560037
       },
       "contact": "09040398006",
@@ -187,7 +150,7 @@
         "addLine1": "Marathalli",
         "addLine2": "Aswathnagar",
         "city": "Bangalore",
-        "state": "Choose...",
+        "country": "Choose...",
         "zipCode": 560037
       },
       "contact": "0123456789",
@@ -198,48 +161,50 @@
       "userId": 3,
       "sellerId": 2,
       "product": {
-        "id": 3,
-        "name": "Pro kit Arduino",
-        "uploadPhoto": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR8BtoTvSjwvjPFLKO35K8IM5yFY4EPewcZ1mAXbjhRityyvUKMv4BpO6fKcXbhgnhm6nQrZqS4Drh1ZgM56DVzL1UM1Oe8kvjZwz1iGLYyEovU2bRQp62uXA&usqp=CAE",
-        "productDesc": "Arduino kit with advanced modules",
-        "mrp": "500",
-        "dp": "399",
-        "status": "draft"
-      },
-      "deliveryAddress": {
-        "id": 0,
-        "addLine1": "Marathalli",
-        "addLine2": "Aswathnagar",
-        "city": "Bangalore",
-        "state": "Choose...",
-        "zipCode": 560037
-      },
-      "contact": "0123456789",
-      "dateTime": "16/01/2021"
-    },
-    {
-      "id": 4,
-      "userId": 3,
-      "sellerId": 2,
-      "product": {
-        "id": 1,
-        "name": "industrial steam cooker",
-        "uploadPhoto": "https://img.directindustry.com/images_di/photo-g/63224-6271159.jpg",
-        "productDesc": "can cook, dry and sterilise up to 2000 litres",
-        "mrp": "1800",
-        "dp": "850",
+        "id": 2,
+        "name": "Industrial 3d printer",
+        "uploadPhoto": "https://hage3d.com/wordpress/wp-content/uploads/2018/11/HAGE3D-3D-Drucker-175X-16_9-2-300x169.png",
+        "productDesc": "3D printer for projects of design and hardware in large scale",
+        "currency": "USD",
+        "mrp": "1250",
+        "dp": "900",
         "status": "publish"
       },
       "deliveryAddress": {
         "id": 0,
         "addLine1": "Marathalli",
         "addLine2": "Aswathnagar",
-        "city": "Bangalore",
-        "state": "Choose...",
+        "city": "Instanbul",
+        "country": "Turkey",
         "zipCode": 560037
       },
       "contact": "0123456789",
-      "dateTime": "16/01/2021"
+      "dateTime": "20/02/2021"
+    },
+    {
+      "id": 4,
+      "userId": 3,
+      "sellerId": 2,
+      "product": {
+        "id": 3,
+        "name": "OTC FD-V8 6-Axis Robot",
+        "uploadPhoto": "https://www.eurobots.net/media/robot/det_685_otc-daihen-almega-ax-v6_arc_welding.jpg",
+        "productDesc": "Industrial robot for solding components",
+        "currency": "GBP",
+        "mrp": "1000",
+        "dp": "499",
+        "status": "publish"
+      },
+      "deliveryAddress": {
+        "id": 0,
+        "addLine1": "Marathalli",
+        "addLine2": "Aswathnagar",
+        "city": "Instanbul",
+        "country": "Turkey",
+        "zipCode": 560037
+      },
+      "contact": "0123456789",
+      "dateTime": "20/02/2021"
     }
   ]
 }

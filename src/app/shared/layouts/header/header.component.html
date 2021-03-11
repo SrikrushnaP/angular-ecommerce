@@ -19,14 +19,14 @@
                 </div>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">{{'header.home' | translate}} <span class="sr-only">(current)</span></a>
+                <a class="nav-link" routerLink="/home">{{'header.home' | translate}} <span class="sr-only">(current)</span></a>
             </li>
             <!-- <li class="nav-item">
                 <a class="nav-link" href="#">{{'header.service' | translate}}</a>
             </li> -->
             
             <li class="nav-item" *ngIf="user_role == 'buyer'">
-                    <a class="nav-link" routerLink="/my-order">{{'header.order' | translate}}</a>
+                    <a class="nav-link" routerLink="/buyer-dashboard">{{'header.product' | translate}}</a>
             </li>
             <li class="nav-item" *ngIf="user_role == 'admin'">
                     <a class="nav-link" routerLink="/all-order">{{'header.order' | translate}}</a>
@@ -44,10 +44,6 @@
                     <a class="nav-link" routerLink="/contact-us">{{'header.contact_us' | translate}}</a>
             </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input matInput class="form-control mr-sm-2" type="search" placeholder="{{'header.search' | translate}}" aria-label="Search">
-            <button mat-button class="btn btn-outline-success my-2 my-sm-0" type="submit">{{'header.search' | translate}}</button>
-        </form>
         <ul class="navbar-nav ml-auto" *ngIf="!logged_in">
             <li class="nav-item">
                 <a class="nav-link" routerLink="/sign-in">{{'header.signin' | translate}}</a>

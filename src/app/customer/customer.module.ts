@@ -6,11 +6,14 @@ import { SigninSignupComponent } from './signin-signup/signin-signup.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CheckoutComponent } from './buyer/checkout/checkout.component';
+import { CommentComponent } from './buyer/comment/comment.component';
+import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
-  declarations: [BuyerDashboardComponent, SellerDashboardComponent, SigninSignupComponent, CheckoutComponent],
+  declarations: [BuyerDashboardComponent, SellerDashboardComponent, SigninSignupComponent, CheckoutComponent, CommentComponent],
   imports: [
     CommonModule,
+    MatIconModule,
     FormsModule,
     ReactiveFormsModule,
     RouterModule
