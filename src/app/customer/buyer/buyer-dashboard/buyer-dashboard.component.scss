@@ -1,31 +1,31 @@
-.product{
-    margin-top: 1rem;
-    .card{
-        img{
-            height:250px;
-            padding: 1rem;
-        }
-        .card-body{
-            .product-desc{
-                height: 9rem;
-                overflow: hidden;
-            //   text-overflow:ellipsis;
-            }
-            .float-right{
-                font-size: 22px;
-            }
-            .card-title{
-                white-space: nowrap; 
-                overflow: hidden;
-                text-overflow:ellipsis;
-            }
-            .card-text{
-                opacity: .5;
-            }
-        }
+.product {
+  margin-top: 1rem;
+  .card {
+    img {
+      height: 250px;
+      padding: 1rem;
     }
+    .card-body {
+      .product-desc {
+        height: 9rem;
+        overflow: hidden;
+        //   text-overflow:ellipsis;
+      }
+      .float-right {
+        font-size: 22px;
+      }
+      .card-title {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .card-text {
+        opacity: 0.5;
+      }
+    }
+  }
 }
 .rating {
-	color: #007bff;
-	margin: 1rem 0;
+  color: #007bff;
+  margin: 1rem 0;
 }

@@ -1,21 +1,18 @@
-import { Injectable } from '@angular/core';
-import { environment } from '../../../environments/environment';
-import { ApiService } from '../../core/services/api.service';
-import { Observable } from 'rxjs';
+import { Injectable } from "@angular/core";
+import { environment } from "../../../environments/environment";
+import { ApiService } from "../../core/services/api.service";
+import { Observable } from "rxjs";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: "root",
 })
 export class AdminService {
-
   public user_url = environment.server_url + "/user/";
   public product_url = environment.server_url + "/products/";
 
   public all_user = environment.server_url + "/user";
 
-
-  constructor(private apiService: ApiService) { }
-
+  constructor(private apiService: ApiService) {}
 
   userDashboardData() {
     return this.apiService.get(this.user_url);
