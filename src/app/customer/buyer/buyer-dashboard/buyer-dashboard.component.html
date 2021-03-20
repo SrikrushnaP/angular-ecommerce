@@ -1,11 +1,116 @@
 <br />
 <nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a href="#">Buyer</a></li>
-    <li class="breadcrumb-item">
-      <a routerLink="/buyer-dashboard">Products</a>
-    </li>
-  </ol>
+    <h2>Recomended products</h2>
+</nav>
+<div class="row">
+  <div class="col-sm-4 product" *ngFor="let product of all_products">
+    <div class="card">
+      <img
+        src="{{ product.uploadPhoto }}"
+        class="card-img-top"
+        alt="{{ product.name }}"
+      />
+      <div class="card-body">
+        <h3 class="card-title">{{ product.name }}</h3>
+        <p>
+          <span class="float-left"
+            ><strong>MRP</strong>:
+            <del>{{ product.mrp }} ${{ product.currency }}</del></span
+          >
+          <span class="float-right"
+            ><strong>DP</strong>: {{ product.dp }} ${{ product.currency }}</span
+          >
+        </p>
+        <br />
+        <p class="card-text product-desc">
+          {{ product.productDesc }} <b>{{ product.brand }}</b>
+        </p>
+        <div class="rating">
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+          <mat-icon>star_half</mat-icon>
+        </div>
+
+        <div>
+          <button
+            mat-button
+            class="btn btn-primary float-left"
+            (click)="addToCart()"
+          >
+            Add to Cart
+          </button>
+          <button
+            mat-button
+            class="btn btn-primary float-right"
+            (click)="buyProduct(product.id)"
+          >
+            Buy Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<nav aria-label="breadcrumb">
+    <h2>Most buyed</h2>
+</nav>
+<div class="row">
+  <div class="col-sm-4 product" *ngFor="let product of all_products">
+    <div class="card">
+      <img
+        src="{{ product.uploadPhoto }}"
+        class="card-img-top"
+        alt="{{ product.name }}"
+      />
+      <div class="card-body">
+        <h3 class="card-title">{{ product.name }}</h3>
+        <p>
+          <span class="float-left"
+            ><strong>MRP</strong>:
+            <del>{{ product.mrp }} ${{ product.currency }}</del></span
+          >
+          <span class="float-right"
+            ><strong>DP</strong>: {{ product.dp }} ${{ product.currency }}</span
+          >
+        </p>
+        <br />
+        <p class="card-text product-desc">
+          {{ product.productDesc }} <b>{{ product.brand }}</b>
+        </p>
+        <div class="rating">
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+          <mat-icon>star_half</mat-icon>
+        </div>
+
+        <div>
+          <button
+            mat-button
+            class="btn btn-primary float-left"
+            (click)="addToCart()"
+          >
+            Add to Cart
+          </button>
+          <button
+            mat-button
+            class="btn btn-primary float-right"
+            (click)="buyProduct(product.id)"
+          >
+            Buy Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br />
+<nav aria-label="breadcrumb">
+    <h2>Best avaliation products</h2>
 </nav>
 <div class="row">
   <div class="col-sm-4 product" *ngFor="let product of all_products">

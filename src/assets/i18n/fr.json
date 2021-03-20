@@ -1,0 +1,28 @@
+{
+    "intro": "Bienvenue dans le monde de l'internalisation",
+    "proj_name": "Talos",
+    "project_short_desc": "Marché en ligne d'équipements industriels",
+    "header": {
+        "ecommerce": "Ecommerce 2.0",
+        "lang_fr": "Français",
+        "lang_en": "English",
+        "lang_hn": "Hindi(हिंदी)",
+        "lang_pt": "Português",
+        "home": "Menu",
+        "service": "services",
+        "about_us": "A propos de nous",
+        "contact_us": "contactez-nous",
+        "product": "Produit",
+        "user": "Utilisateur",
+        "search": "recherch",
+        "signin": "s'authentifier",
+        "signup": "s'inscrire",
+        "my_profile": "mon profil",
+        "logout": "déconnexion",
+        "signout": "SignOut"
+    },
+    "footer": {
+        "year": "2019",
+        "tc": "conditions d'utilisation"
+    }
+}
