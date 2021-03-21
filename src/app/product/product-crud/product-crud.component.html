@@ -24,6 +24,7 @@
       <!-- <th scope="col">Display Image</th> -->
       <th scope="col">MRP</th>
       <th scope="col">DP</th>
+      <th scope="col">Currency</th>
       <!-- <th scope="col">Description</th> -->
       <th scope="col">Status</th>
       <th scope="col">Action</th>
@@ -36,6 +37,7 @@
       <!-- <td>{{product_data.uploadPhoto}}</td> -->
       <td>{{ product_data.mrp }}</td>
       <td>{{ product_data.dp }}</td>
+      <td>{{ product_data.currency }}</td>
       <!-- <td>{{product_data.productDesc}}</td> -->
       <td>{{ product_data.status }}</td>
       <td>
@@ -167,6 +169,22 @@
                   class="invalid-feedback"
                 >
                   <div *ngIf="rf.dp.errors.required">DP is required</div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="productMRP">Currency</label>
+                <input
+                  matInput
+                  type="text"
+                  class="form-control"
+                  formControlName="currency"
+                  [ngClass]="{ 'is-invalid': addEditProduct && rf.currency.errors }"
+                />
+                <div
+                  *ngIf="addEditProduct && rf.currency.errors"
+                  class="invalid-feedback"
+                >
+                  <div *ngIf="rf.currency.errors.required">currency is required</div>
                 </div>
               </div>
               <div class="form-group">

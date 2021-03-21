@@ -21,7 +21,7 @@
         <div class="progressbar-div">
           <div class="progress">
             <div
-              class="progress-bar bg-success"
+              class="progress-bar-pending"
               role="progressbar"
               style="width: 25%"
               aria-valuenow="25"
@@ -33,7 +33,7 @@
           </div>
           <div class="progress">
             <div
-              class="progress-bar bg-info"
+              class="progress-bar-processed"
               role="progressbar"
               style="width: 25%"
               aria-valuenow="25"
@@ -45,7 +45,7 @@
           </div>
           <div class="progress">
             <div
-              class="progress-bar bg-warning"
+              class="progress-bar-reajected"
               role="progressbar"
               style="width: 50%"
               aria-valuenow="50"
@@ -82,13 +82,13 @@
       class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
     >
       <div class="col p-4 d-flex flex-column position-static">
-        <strong class="d-inline-block mb-2 text-success">Products</strong>
+        <strong class="d-inline-block">Products</strong>
         <h3 class="mb-0">Manage Products</h3>
         <!-- <div class="mb-1 text-muted">Last Product Update: <strong> Nov 11</strong></div> -->
         <div class="progressbar-div">
           <div class="progress">
             <div
-              class="progress-bar bg-success"
+              class="progress-bar-pending"
               role="progressbar"
               [style.width.%]="publish_product"
               aria-valuenow="25"
@@ -101,7 +101,7 @@
           <br />
           <div class="progress">
             <div
-              class="progress-bar bg-warning"
+              class="progress-bar-processed"
               role="progressbar"
               [ngStyle]="{ 'width.%': inactive_product }"
               aria-valuenow="50"
@@ -112,9 +112,9 @@
             </div>
           </div>
           <br />
-          <div class="progress">
+          <div class="progress-bar-reajected">
             <div
-              class="progress-bar bg-info"
+              class="progress-bar"
               role="progressbar"
               [ngStyle]="{ 'width.%': draft_product }"
               aria-valuenow="50"
