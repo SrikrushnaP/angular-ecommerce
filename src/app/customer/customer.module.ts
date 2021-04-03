@@ -8,9 +8,10 @@ import { RouterModule } from '@angular/router';
 import { CheckoutComponent } from './buyer/checkout/checkout.component';
 import { CommentComponent } from './buyer/comment/comment.component';
 import {MatIconModule} from "@angular/material/icon";
+import { CarrouselComponent } from './buyer/carrousel/carrousel.component';
 
 @NgModule({
-  declarations: [BuyerDashboardComponent, SellerDashboardComponent, SigninSignupComponent, CheckoutComponent, CommentComponent],
+  declarations: [BuyerDashboardComponent, SellerDashboardComponent, SigninSignupComponent, CheckoutComponent, CommentComponent, CarrouselComponent],
   imports: [
     CommonModule,
     MatIconModule,

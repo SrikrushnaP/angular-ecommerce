@@ -6,13 +6,15 @@ import { PageNotFoundErrorComponent } from './layouts/page-not-found-error/page-
 import { TranslateModule } from '@ngx-translate/core';
 import { RouterModule } from '@angular/router';
 import { NumberOnlyDirective } from './directives/number-only.directive';
+import { WalletComponent } from './layouts/wallet/wallet.component';
 
 @NgModule({
   declarations: [
     HeaderComponent,
     FooterComponent,
     PageNotFoundErrorComponent,
-    NumberOnlyDirective
+    NumberOnlyDirective,
+    WalletComponent
   ],
   imports: [
     CommonModule,

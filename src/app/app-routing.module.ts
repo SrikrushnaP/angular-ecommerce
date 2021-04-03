@@ -13,6 +13,7 @@ import { ProductCrudComponent } from './product/product-crud/product-crud.compon
 import { CheckoutComponent } from './customer/buyer/checkout/checkout.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { WalletComponent } from './shared/layouts/wallet/wallet.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/", pathMatch: "full" },
@@ -55,7 +56,8 @@ const routes: Routes = [
   {
     path: '', canActivate: [BuyerAuthGaurdService], children: [
       { path: "buyer-dashboard", component: BuyerDashboardComponent },
-      { path: "checkout", component: CheckoutComponent }
+      { path: "checkout", component: CheckoutComponent },
+      { path: "wallet", component: WalletComponent },
     ]
   },
   { path: "**", component: PageNotFoundErrorComponent }
