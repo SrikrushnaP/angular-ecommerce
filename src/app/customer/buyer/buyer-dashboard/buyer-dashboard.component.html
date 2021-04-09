@@ -1,7 +1,12 @@
-<app-carrousel></app-carrousel>
+<div class="searchcard">
+  <app-searchbar></app-searchbar>
+</div>
+<div class="carrouselcard">
+  <app-carrousel></app-carrousel>
+</div>
 <br />
 <nav aria-label="breadcrumb">
-    <h2>Recomended products</h2>
+  <h2>Recomended products</h2>
 </nav>
 <div class="row">
   <div class="col-sm-4 product" *ngFor="let product of all_products">
@@ -56,13 +61,12 @@
 </div>
 <br />
 <div class="card-discount">
-  <img class="card-discount-img" src="assets/discount.jpg" alt="Discount"/>
-  <img class="card-discount-img" src="assets/discount2.jpg" alt="Discount"/>
-  
+  <img class="card-discount-img" src="assets/discount.jpg" alt="Discount" />
+  <img class="card-discount-img" src="assets/discount2.jpg" alt="Discount" />
 </div>
-<br/>
+<br />
 <nav aria-label="breadcrumb">
-    <h2>Most buyed</h2>
+  <h2>Most buyed</h2>
 </nav>
 <div class="row">
   <div class="col-sm-4 product" *ngFor="let product of all_products">
@@ -117,7 +121,7 @@
 </div>
 <br />
 <nav aria-label="breadcrumb">
-    <h2>Best avaliation products</h2>
+  <h2>Best avaliation products</h2>
 </nav>
 <div class="row">
   <div class="col-sm-4 product" *ngFor="let product of all_products">
