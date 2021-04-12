@@ -8,7 +8,33 @@
 </div>
 
 <div class="row mb-2">
-  <app-linechart></app-linechart>
-  <app-piechart></app-piechart>
+  <mat-accordion>
+    <mat-expansion-panel
+      (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false"
+    >
+      <mat-expansion-panel-header>
+        <mat-panel-title> Sales Year performance</mat-panel-title>
+      </mat-expansion-panel-header>
+      <app-linechart></app-linechart>
+    </mat-expansion-panel>
+    <mat-expansion-panel
+      (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false"
+    >
+      <mat-expansion-panel-header>
+        <mat-panel-title> Sales per country</mat-panel-title>
+      </mat-expansion-panel-header>
+      <app-piechart></app-piechart>
+    </mat-expansion-panel>
+  <mat-expansion-panel
+      (opened)="panelOpenState = true"
+      (closed)="panelOpenState = false"
+    >
+      <mat-expansion-panel-header>
+        <mat-panel-title> Most selled products by category</mat-panel-title>
+      </mat-expansion-panel-header>
+      <app-barchart></app-barchart>
+    </mat-expansion-panel>
+  </mat-accordion>
 </div>
-

@@ -1,65 +1,115 @@
 <nav class="navbar navbar-expand-lg navbar-white bg-white">
-    <a class="navbar-brand" href="#"><img src="assets/LogoTalos.png">Talos</a>
-    <button mat-button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+  <a class="navbar-brand" href="#"><img src="assets/LogoTalos.png" />Talos</a>
+  <button
+    mat-button
+    class="navbar-toggler"
+    type="button"
+    data-toggle="collapse"
+    data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    {{language}}
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" (click)="switchLanguage('en')">{{'header.lang_en' | translate}}</a>
-                    <a class="dropdown-item" (click)="switchLanguage('hn')">{{'header.lang_hn' | translate}}</a>
-                    <a class="dropdown-item" (click)="switchLanguage('pt')">{{'header.lang_pt' | translate}}</a>
-                    <a class="dropdown-item" (click)="switchLanguage('fr')">{{'header.lang_fr' | translate}}</a>
-                </div>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" routerLink="/home">{{'header.home' | translate}} <span class="sr-only">(current)</span></a>
-            </li>
-            <!-- <li class="nav-item">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link dropdown-toggle"
+          href="#"
+          id="navbarDropdown"
+          role="button"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          {{ language }}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" (click)="switchLanguage('en')">{{
+            "header.lang_en" | translate
+          }}</a>
+          <a class="dropdown-item" (click)="switchLanguage('hn')">{{
+            "header.lang_hn" | translate
+          }}</a>
+          <a class="dropdown-item" (click)="switchLanguage('pt')">{{
+            "header.lang_pt" | translate
+          }}</a>
+          <a class="dropdown-item" (click)="switchLanguage('fr')">{{
+            "header.lang_fr" | translate
+          }}</a>
+        </div>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/home"
+          >{{ "header.home" | translate }}
+          <span class="sr-only">(current)</span></a
+        >
+      </li>
+      <!-- <li class="nav-item">
                 <a class="nav-link" href="#">{{'header.service' | translate}}</a>
             </li> -->
-            
-            <li class="nav-item" *ngIf="user_role == 'buyer'">
-                    <a class="nav-link" routerLink="/buyer-dashboard">{{'header.product' | translate}}</a>
-            </li>
-            <li class="nav-item" *ngIf="user_role == 'admin'">
-                    <a class="nav-link" routerLink="/all-order">{{'header.order' | translate}}</a>
-            </li>
-            <li class="nav-item" *ngIf="user_role == 'seller'">
-                    <a class="nav-link" routerLink="/seller/product">{{'header.product' | translate}}</a>
-            </li>
-            <li class="nav-item" *ngIf="user_role == 'admin'">
-                    <a class="nav-link" routerLink="/admin/product">{{'header.product' | translate}}</a>
-            </li>
-            <li class="nav-item" *ngIf="user_role == 'admin'">
-                    <a class="nav-link" routerLink="/admin/user">{{'header.user' | translate}}</a>
-            </li>
-            <li class="nav-item">
-                    <a class="nav-link" routerLink="/contact-us">{{'header.contact_us' | translate}}</a>
-            </li>
-        </ul>
-        <ul class="navbar-nav ml-auto" *ngIf="!logged_in">
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/sign-in">{{'header.signin' | translate}}</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/sign-up">{{'header.signup' | translate}}</a>
-            </li>
-        </ul>
-        <ul class="navbar-nav ml-auto" *ngIf="logged_in">
-            <li class="nav-item">
-                <a class="nav-link sim-pointer" routerLink="/my-profile">{{'header.my_profile' | translate}}</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link sim-pointer" (click)="logOut()">{{'header.signout' | translate}}</a>
-            </li>
-        </ul>
-    </div>
+      <li class="nav-item" *ngIf="user_role == 'buyer'">
+        <a class="nav-link" routerLink="/buyer/orders">{{
+          "header.orders" | translate
+        }}</a>
+      </li>
+      <li class="nav-item" *ngIf="user_role == 'buyer'">
+        <a class="nav-link" routerLink="buyer/cart">{{
+          "header.cart" | translate
+        }}</a>
+      </li>
+      <li class="nav-item" *ngIf="user_role == 'admin'">
+        <a class="nav-link" routerLink="/all-order">{{
+          "header.order" | translate
+        }}</a>
+      </li>
+      <li class="nav-item" *ngIf="user_role == 'seller'">
+        <a class="nav-link" routerLink="/seller/product">{{
+          "header.product" | translate
+        }}</a>
+      </li>
+      <li class="nav-item" *ngIf="user_role == 'admin'">
+        <a class="nav-link" routerLink="/admin/product">{{
+          "header.product" | translate
+        }}</a>
+      </li>
+      <li class="nav-item" *ngIf="user_role == 'admin'">
+        <a class="nav-link" routerLink="/admin/user">{{
+          "header.user" | translate
+        }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/contact-us">{{
+          "header.contact_us" | translate
+        }}</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto" *ngIf="!logged_in">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/sign-in">{{
+          "header.signin" | translate
+        }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/sign-up">{{
+          "header.signup" | translate
+        }}</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto" *ngIf="logged_in">
+      <li class="nav-item">
+        <a class="nav-link sim-pointer" routerLink="/my-profile">{{
+          "header.my_profile" | translate
+        }}</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link sim-pointer" (click)="logOut()">{{
+          "header.signout" | translate
+        }}</a>
+      </li>
+    </ul>
+  </div>
 </nav>

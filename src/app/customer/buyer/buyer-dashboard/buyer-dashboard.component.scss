@@ -39,3 +39,14 @@
   padding:0;
   margin:0;
 }
+.Type-industry{
+  flex-direction: column;
+  display: inline-flex;
+}
+.industry-line{
+  flex-direction: row;
+  display: inline-flex;
+  span{
+    margin:0 10px 0;
+  }
+}

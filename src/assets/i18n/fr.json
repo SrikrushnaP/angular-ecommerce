@@ -14,12 +14,22 @@
         "contact_us": "contactez-nous",
         "product": "Produit",
         "user": "Utilisateur",
+        "orders":"Demande",
         "search": "recherch",
+        "cart":"Carre",
         "signin": "s'authentifier",
         "signup": "s'inscrire",
+        "logout":"se déconnecter",
         "my_profile": "mon profil",
-        "logout": "déconnexion",
-        "signout": "SignOut"
+        "signout": "déconnexion"
+    },
+    "searchbar":{
+        "text":"Quois vous rechercher?"
+    },
+    "buyer_dashboard":{
+        "select":"Sélectionnez le type de produit que vous souhaitez",
+        "food":"alimentation",
+        "health":"santé"
     },
     "footer": {
         "year": "2019",

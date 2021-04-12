@@ -42,7 +42,7 @@ export class PiechartComponent implements OnInit {
     },
     series: [
       {
-        name: "Brands",
+        name: "Country",
         colorByPoint: true,
         data: [
           {

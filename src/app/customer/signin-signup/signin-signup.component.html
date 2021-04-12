@@ -1,17 +1,17 @@
 <div class="jumbotron">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 offset-md-3" *ngIf="regForm">
+            <div class=" form-wrapper" *ngIf="regForm">
                 <h3>Registeration - Talos</h3>
                 <form [formGroup]="signUpform" (ngSubmit)="onSubmitSignUp()">
-                    <div class="form-group">
+                    <div class="form-item">
                         <label>Name</label>
                         <input matInput type="text" class="form-control" formControlName="name" [ngClass]="{'is-invalid':signUpsubmitted && rf.name.errors}" />
                         <div *ngIf="signUpsubmitted && rf.name.errors" class="invalid-feedback">
                             <div *ngIf="rf.name.errors.required">Name is required</div>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-item">
                         <label>Mobile Number</label>
                         <input matInput type="tel" class="form-control" formControlName="mobNumber" [ngClass]="{'is-invalid':signUpsubmitted && rf.mobNumber.errors}"
                             numberOnly />
@@ -19,14 +19,14 @@
                             <div *ngIf="rf.mobNumber.errors.required">Mobile Number is required</div>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-item">
                         <label>Enter Your Age</label>
                         <input matInput type="number" class="form-control" formControlName="age" [ngClass]="{'is-invalid':signUpsubmitted && rf.age.errors}" />
                         <div *ngIf="signUpsubmitted && rf.age.errors" class="invalid-feedback">
                             <div *ngIf="rf.age.errors.required">Age is required</div>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-item">
                         <label>ENter Your DOB</label>
                         <input matInput type="date" class="form-control" formControlName="dob" [ngClass]="{'is-invalid':signUpsubmitted && rf.dob.errors}" />
                         <div *ngIf="signUpsubmitted && rf.dob.errors" class="invalid-feedback" [ngClass]="{'is-invalid':signUpsubmitted && rf.dob.errors}">
@@ -34,7 +34,7 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-md-6">
+                        <div class="form-item col-md-6">
                             <label for="inputEmail4">Email</label>
                             <input matInput type="email" class="form-control" placeholder="Email" formControlName="email"
                                 [ngClass]="{'is-invalid':signUpsubmitted && rf.email.errors}">
@@ -43,7 +43,7 @@
                                 <div *ngIf="rf.email.errors.email">Enter valid email</div>
                             </div>
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-item col-md-6">
                             <label for="inputPassword4">Password</label>
                             <input matInput type="password" class="form-control" placeholder="Password" formControlName="password"
                                 [ngClass]="{'is-invalid':signUpsubmitted && rf.password.errors}">
@@ -53,7 +53,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-item">
                         <label for="inputAddress">Address</label>
                         <input matInput type="text" class="form-control" placeholder="1234 Main St" formControlName="addLine1"
                             [ngClass]="{'is-invalid':signUpsubmitted && rf.addLine1.errors}">
@@ -61,20 +61,20 @@
                             <div *ngIf="rf.addLine1.errors.required">Addressline1 is required</div>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-item">
                         <label for="inputAddress2">Address 2</label>
                         <input matInput type="text" class="form-control" placeholder="Apartment, studio, or floor"
                             formControlName="addLine2">
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-md-6">
+                        <div class="form-item col-md-6">
                             <label for="inputCity">City</label>
                             <input matInput type="text" class="form-control" formControlName="city" [ngClass]="{'is-invalid':signUpsubmitted && rf.city.errors}">
                             <div *ngIf="signUpsubmitted && rf.city.errors" class="invalid-feedback">
                                 <div *ngIf="rf.city.errors.required">City is required</div>
                             </div>
                         </div>
-                        <div class="form-group col-md-4">
+                        <div class="form-item col-md-4">
                             <label for="inputState">State</label>
                             <select id="inputState" class="form-control" formControlName="state" [ngClass]="{'is-invalid':signUpsubmitted && rf.state.errors}">
                                 <option selected>Choose...</option>
@@ -84,7 +84,7 @@
                                 <div *ngIf="rf.state.errors.required">Select one option</div>
                             </div>
                         </div>
-                        <div class="form-group col-md-2">
+                        <div class="form-item col-md-2">
                             <label for="inputZip">Zip</label>
                             <input matInput type="text" class="form-control" formControlName="zipCode" [ngClass]="{'is-invalid':signUpsubmitted && rf.zipCode.errors}">
                             <div *ngIf="signUpsubmitted && rf.zipCode.errors" class="invalid-feedback">
@@ -92,20 +92,20 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-item">
                         <label for="exampleFormControlSelect2">Language You Know</label>
                         <select multiple class="form-control" formControlName="language" [ngClass]="{'is-invalid':signUpsubmitted && rf.language.errors}">
                             <option>English</option>
                             <option>Hindi</option>
-                            <option>Spanish</option>
-                            <option>Mandarin</option>
+                            <option>Portuguese</option>
+                            <option>French</option>
                             <option>Other</option>
                         </select>
                         <div *ngIf="signUpsubmitted && rf.language.errors" class="invalid-feedback">
                             <div *ngIf="rf.language.errors.required">Select atleast one language</div>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-item">
                         <label for="exampleFormControlSelect2">Gender</label><br>
                         <div class="form-check form-check-inline">
                             <input matInput class="form-check-input" type="radio" formControlName="gender" value="Male"
@@ -126,21 +126,21 @@
               <div *ngIf="rf.gender.errors.required">Select gender</div>
             </div> -->
                     </div>
-                    <div class="form-group">
+                    <div class="form-item">
                         <label for="exampleFormControlTextarea1">Something About You</label>
                         <textarea class="form-control" rows="3" formControlName="aboutYou" [ngClass]="{'is-invalid':signUpsubmitted && rf.aboutYou.errors}"></textarea>
                         <div *ngIf="signUpsubmitted && rf.aboutYou.errors" class="invalid-feedback">
                             <div *ngIf="rf.aboutYou.errors.required">Write something about you</div>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-item">
                         <label for="exampleFormControlFile1">Upload Your Photo</label>
                         <input matInput type="file" class="form-control-file" formControlName="uploadPhoto" [ngClass]="{'is-invalid':signUpsubmitted && rf.uploadPhoto.errors}">
                         <div *ngIf="signUpsubmitted && rf.uploadPhoto.errors" class="invalid-feedback">
                             <div *ngIf="rf.uploadPhoto.errors.required">Please upload file</div>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div>
                         <div class="form-check">
                             <input matInput class="form-check-input" type="checkbox" formControlName="agreetc" [ngClass]="{'is-invalid':signUpsubmitted && rf.agreetc.errors}">
                             <label class="form-check-label" for="gridCheck">
@@ -151,7 +151,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-item">
                         <label for="roleSelect">What You Want To Do</label>
                         <select class="form-control" formControlName="role" [ngClass]="{'is-invalid':signUpsubmitted && rf.role.errors}">
                             <option value="seller">Sell</option>
@@ -161,18 +161,18 @@
                             <div *ngIf="rf.role.errors.required">Select one option</div>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-item">
                         <button mat-button class="btn btn-primary">Register</button>
                     </div>
                 </form>
                 <p routerLink="/sign-in" class="sim-pointer">Already have an account click here for login</p>
             </div>
-            <div class="col-md-6 offset-md-3" *ngIf="!regForm">
-                <h3>Login - Talos</h3>
+            <div class="form-wrapper" *ngIf="!regForm">
+                <h1>Sign In</h1>
                 <form name="form" #tf="ngForm" (ngSubmit)="tf.form.valid && onSubmitSignIn()" novalidate>
-                    <div class="form-group">
+                    <div class="form-item">
                         <label>Email</label>
-                        <input matInput type="email" class="form-control" name="userEmail" [(ngModel)]="signInFormValue.userEmail"
+                        <input matInput class="form-item" type="email" class="form-control" name="userEmail" [(ngModel)]="signInFormValue.userEmail"
                             #userEmail="ngModel" [ngClass]="{ 'is-invalid': tf.submitted && userEmail.invalid }"
                             required email />
                         <div *ngIf="tf.submitted && userEmail.invalid" class="invalid-feedback">
@@ -180,7 +180,7 @@
                             <div *ngIf="userEmail.errors.email">Email must be a valid email address</div>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="form-item">
                         <label>Password</label>
                         <input matInput type="password" class="form-control" name="userPassword" [(ngModel)]="signInFormValue.userPassword"
                             #userPassword="ngModel" [ngClass]="{ 'is-invalid': tf.submitted && userPassword.invalid }"
@@ -191,11 +191,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="form-group">
+                    <div class="button-panel">
                         <button mat-button class="btn btn-primary">Login</button>
                     </div>
                 </form>
-                <p routerLink="/sign-up" class="sim-pointer">Don't have an account click here for register</p>
+                <p routerLink="/sign-up" class="form-footer">Don't have an account click here for register</p>
             </div>
         </div>
     </div>

@@ -14,7 +14,7 @@ body {
     background: #ffffff;
     text-align: center;
     padding: 4em 0;
-    max-width: 750px;
+    max-width: 950px;
     position: relative;
     overflow: hidden;
   }
@@ -47,8 +47,8 @@ body {
     float: left;
   }
   .carrousel li img {
-    max-width: 475px;
-    max-height: auto;
+    max-width: 950px;
+    max-height: 600px;
     object-fit: cover;
   }
   .carrousel .slidesNavigation {

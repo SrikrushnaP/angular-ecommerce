@@ -2,17 +2,176 @@
   <h1>Love to Hear From You</h1>
   <div class="row">
     <div class="col-md-9">
-      Do you wanna talk with us, this is our contact.
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3675.5384281408014!2d-47.049550685400696!3d-22.893503143151857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8cf5bbc2be4e7%3A0x5dd9f5f87102e46d!2sAv.%20Jos%C3%A9%20de%20Souza%20Campos%20-%20Cambu%C3%AD%2C%20Campinas%20-%20SP!5e0!3m2!1sen!2sbr!4v1608400128689!5m2!1sen!2sbr"
-        width="600"
-        height="450"
-        frameborder="0"
-        style="border: 0"
-        allowfullscreen=""
-        aria-hidden="false"
-        tabindex="0"
-      ></iframe>
+      <h1>FAQ</h1>
+      <mat-accordion>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title> O que é vendido no Talos?</mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>
+            No marketplace Talos, é vendido produtos como maquinários,
+            equipamentos eletronicos, componentes de internet das coisas(IoT), e
+            ferramentas para fins industriais, seja ele da industria quimica,
+            alimenticia, farmaceutica, agricola, eletroncia etc
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title
+              >Qual a diferencial da Talos em relação aos outros marketplaces do
+              mercado?</mat-panel-title
+            >
+          </mat-expansion-panel-header>
+          <p>
+            Além de atuarmos com uma comissão menor do que os outros
+            competidores, nós possuimos presença em midias sociais como
+            Instagram e Linkedin, seguindo estratégias de conteúdo, e também
+            possuimos um design simplificado para facilitar a experiencia do
+            usuário. Outro diferencial nosso é possuimos um sistema de feedback
+            para melhorar a qualidade da entrega e da tecnologia dos nossos
+            produtos
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Como funciona o pagamento na Talos?</mat-panel-title
+            >
+          </mat-expansion-panel-header>
+          <p>
+            Nesta plataforma, voce pode pagar por meio de cartão de crédito ou
+            débito, Além de outras formas como Stripe e gift card.
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Quais são os custos para vender na Talos?</mat-panel-title
+            >
+          </mat-expansion-panel-header>
+          <p>
+            Para os vendedores, será cobrado apenas uma comissão de 7.5%, mas
+            para aqueles que assinarem um contrato de exclusividade, será apenas
+            de 4.5%
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Perdi uma promoção, o que faço para saber de futuros
+              descontos?</mat-panel-title
+            >
+          </mat-expansion-panel-header>
+          <p>
+            Acompanhe nossa nwesletter sobre industria e suas tendencias, pois
+            geralmente anunciamos nossas campanhas de descontos por lá, além de
+            ficar sabendo de ferramentas que podem ajudar seu negócio
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Quais paises eu posso comprar produtos?</mat-panel-title
+            >
+          </mat-expansion-panel-header>
+          <p>
+            Como a plataforma da Talos atua no sistema de pagamento chamado
+            Stripe Connect Atuamos nos paises onde este meio é aceito, como por
+            exemplo:
+            <br />
+            Brasil
+            <br />
+            Mexico
+            <br />
+            EUA
+            <br />
+            Canadá
+            <br />
+            Alemanha
+            <br />
+            Reino Unido
+            <br />
+            Japão
+            <br />
+            India
+            <br />
+            Singapura
+            <br />
+            França
+            <br />
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Meu produto veio com defeito, o que fazer?</mat-panel-title
+            >
+          </mat-expansion-panel-header>
+          <p>
+            Busque negociar com o vendedor sobre o ocorrido, além de contactar
+            nosso canal de atendimendo e o serviço anti-fraude do marketplace.
+            Lembre sempre de dar um feedback da compra para fortalecer nossa
+            plataforma e melhorar a qualidade das entregas dos vendedores
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Onde posso saber mais para conseguir vender meus produtos nesta
+              plataforma?</mat-panel-title
+            >
+          </mat-expansion-panel-header>
+          <p>
+            Voce pode assinar nossa newsletter par vendedores, nela abordamos
+            tópicos como precificação, SEO, relacionamento com consumidor e
+            tendencias do mercado industrial
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Quais produtos não são permitidos?</mat-panel-title
+            >
+          </mat-expansion-panel-header>
+          <p>
+            Segue a lista do que não podeser vendido neste site:
+            <br />
+            Produtos ilegais nas jurisdições dos países que a Talos atue
+            <br />
+            Fraudes
+            <br />
+            Produtos com defeito
+            <br />
+          </p>
+        </mat-expansion-panel>
+      </mat-accordion>
     </div>
     <div class="col-md-3">
       <h3>Postal Address</h3>

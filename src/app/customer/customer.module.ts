@@ -12,15 +12,24 @@ import { CarrouselComponent } from './buyer/carrousel/carrousel.component';
 import { LinechartComponent } from './seller/linechart/linechart.component';
 import { PiechartComponent } from './seller/piechart/piechart.component';
 import { SearchbarComponent } from './buyer/searchbar/searchbar.component';
+import { BarchartComponent } from './seller/barchart/barchart.component';
+import { OrdersComponent } from './buyer/orders/orders.component';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatButtonModule } from '@angular/material/button';
+import { TranslateModule } from '@ngx-translate/core';
+import { CartComponent } from './buyer/cart/cart.component';
 
 @NgModule({
-  declarations: [BuyerDashboardComponent, SellerDashboardComponent, SigninSignupComponent, CheckoutComponent, CommentComponent, CarrouselComponent, LinechartComponent, PiechartComponent, SearchbarComponent],
+  declarations: [BuyerDashboardComponent, SellerDashboardComponent, SigninSignupComponent, CheckoutComponent, CommentComponent, CarrouselComponent, LinechartComponent, PiechartComponent, SearchbarComponent, BarchartComponent, OrdersComponent, CartComponent],
   imports: [
     CommonModule,
     MatIconModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule
+    RouterModule,
+    MatExpansionModule,
+    MatButtonModule,
+    TranslateModule
   ]
 })
 export class CustomerModule { }

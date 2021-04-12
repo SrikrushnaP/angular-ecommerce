@@ -16,10 +16,20 @@
         "user": "Usuarios",
         "search": "Pesquise",
         "signin": "Login",
+        "cart":"Carrinho",
+        "orders":"Pedido",
         "signup": "Cadastro",
         "my_profile": "Meu Perfil",
         "logout": "Sair",
         "signout": "Sair"
+    },
+    "searchbar":{
+        "text":"O que voce procura?"
+    },
+    "buyer_dashboard":{
+        "select":"Selecione o tipo de produto que você deseja",
+        "food":"Alímentos",
+        "health":"saúde"
     },
     "footer": {
         "year": "2019",

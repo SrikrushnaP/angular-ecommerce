@@ -16,10 +16,20 @@
         "user": "User",
         "search": "Search",
         "signin": "SignIn",
+        "orders":"Order",
+        "cart":"Cart",
         "signup": "Signup",
         "my_profile": "My Profile",
         "logout": "LogOut",
         "signout": "SignOut"
+    },
+    "searchbar":{
+        "text":"What are you looking for?"
+    },
+    "buyer_dashboard":{
+        "select":"Select the type of industrial product you want to buy",
+        "food":"food",
+        "health":"health"
     },
     "footer": {
         "year": "2019",

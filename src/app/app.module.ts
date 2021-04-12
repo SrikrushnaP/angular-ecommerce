@@ -14,6 +14,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatTableModule} from '@angular/material/table';
 import{MatIconModule} from "@angular/material/icon";
+import {MatExpansionModule} from "@angular/material/expansion";
 
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
@@ -43,6 +44,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     MatInputModule,
     MatTableModule,
     MatIconModule,
+    MatExpansionModule,
     SharedModule,
     FormsModule,
     ReactiveFormsModule,
