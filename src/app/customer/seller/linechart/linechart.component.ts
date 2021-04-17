@@ -1,39 +1,38 @@
-import { Component, OnInit } from '@angular/core';
-import * as Highcharts from 'highcharts';
+import { Component, OnInit } from "@angular/core";
+import * as Highcharts from "highcharts";
 
 declare var require: any;
-let Boost = require('highcharts/modules/boost');
-let noData = require('highcharts/modules/no-data-to-display');
-let More = require('highcharts/highcharts-more');
+let Boost = require("highcharts/modules/boost");
+let noData = require("highcharts/modules/no-data-to-display");
+let More = require("highcharts/highcharts-more");
 
 @Component({
-  selector: 'app-linechart',
-  templateUrl: './linechart.component.html',
-  styleUrls: ['./linechart.component.scss']
+  selector: "app-linechart",
+  templateUrl: "./linechart.component.html",
+  styleUrls: ["./linechart.component.scss"],
 })
 export class LinechartComponent implements OnInit {
-
   public options: any = {
     title: {
-      text: 'Sales- Year performance',
+      text: "Sales- Year performance",
     },
 
     yAxis: {
       title: {
-        text: 'Sales in dollar',
+        text: "Sales in dollar",
       },
     },
 
     xAxis: {
       accessibility: {
-        rangeDescription: 'Range in 7 days',
+        rangeDescription: "Range in 7 days",
       },
     },
 
     legend: {
-      layout: 'vertical',
-      align: 'right',
-      verticalAlign: 'middle',
+      layout: "vertical",
+      align: "right",
+      verticalAlign: "middle",
     },
 
     plotOptions: {
@@ -47,10 +46,13 @@ export class LinechartComponent implements OnInit {
 
     series: [
       {
-        name: 'Sales',
+        name: "Sales",
         data: [1500, 1470, 1552, 1631, 1607, 1794],
       },
     ],
+    credits: {
+      enabled: false,
+    },
 
     responsive: {
       rules: [
@@ -60,9 +62,9 @@ export class LinechartComponent implements OnInit {
           },
           chartOptions: {
             legend: {
-              layout: 'horizontal',
-              align: 'center',
-              verticalAlign: 'bottom',
+              layout: "horizontal",
+              align: "center",
+              verticalAlign: "bottom",
             },
           },
         },
@@ -73,7 +75,6 @@ export class LinechartComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    Highcharts.chart('container-line', this.options);
+    Highcharts.chart("container-line", this.options);
   }
-
 }

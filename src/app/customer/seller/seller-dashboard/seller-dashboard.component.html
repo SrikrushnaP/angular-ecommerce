@@ -1,8 +1,8 @@
 <br />
 <div class="jumbotron p-4 p-md-4 text-white rounded bg-dark">
   <div class="col-md-12 px-0">
-    <h3 class="display-4 font-italic">Welcome to seller dasboard</h3>
-    <p class="lead my-3">Seller can manage product and order details.</p>
+    <h3 class="display-4 font-italic">{{"seller_dashboard.title"| translate}}</h3>
+    <p class="lead my-3">{{"seller_dashboard.subtitle"| translate}}</p>
     <!-- <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p> -->
   </div>
 </div>
@@ -14,7 +14,7 @@
       (closed)="panelOpenState = false"
     >
       <mat-expansion-panel-header>
-        <mat-panel-title> Sales Year performance</mat-panel-title>
+        <mat-panel-title> {{"seller_dashboard.line"| translate}}</mat-panel-title>
       </mat-expansion-panel-header>
       <app-linechart></app-linechart>
     </mat-expansion-panel>
@@ -23,7 +23,7 @@
       (closed)="panelOpenState = false"
     >
       <mat-expansion-panel-header>
-        <mat-panel-title> Sales per country</mat-panel-title>
+        <mat-panel-title> {{"seller_dashboard.pie"| translate}}</mat-panel-title>
       </mat-expansion-panel-header>
       <app-piechart></app-piechart>
     </mat-expansion-panel>
@@ -32,7 +32,7 @@
       (closed)="panelOpenState = false"
     >
       <mat-expansion-panel-header>
-        <mat-panel-title> Most selled products by category</mat-panel-title>
+        <mat-panel-title> {{"seller_dashboard.bar"| translate}}</mat-panel-title>
       </mat-expansion-panel-header>
       <app-barchart></app-barchart>
     </mat-expansion-panel>

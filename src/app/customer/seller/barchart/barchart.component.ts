@@ -16,7 +16,13 @@ export class BarchartComponent implements OnInit {
       text: "Most selled products by category",
     },
     xAxis: {
-      categories: ["Health", "Eletronics and IoT", "Food", "Farming", "Heavy equipments"],
+      categories: [
+        "Health",
+        "Eletronics and IoT",
+        "Food",
+        "Farming",
+        "Heavy equipments",
+      ],
     },
     yAxis: {
       min: 0,
@@ -26,6 +32,9 @@ export class BarchartComponent implements OnInit {
     },
     legend: {
       reversed: true,
+    },
+    credits: {
+      enabled: false,
     },
     plotOptions: {
       series: {

@@ -1,38 +1,72 @@
 {
-    "intro": "Welcome to the world of Internationalization",
-    "proj_name": "Talos",
-    "project_short_desc": "B2B marketplace of industrial machines, services and equipments",
-    "header": {
-        "ecommerce": "Ecommerce 2.0",
-        "lang_fr": "Français",
-        "lang_en": "English",
-        "lang_hn": "Hindi(हिंदी)",
-        "lang_pt": "Português",
-        "home": "Home",
-        "service": "Service",
-        "about_us": "About US",
-        "contact_us": "Contact US",
-        "product": "Product",
-        "user": "User",
-        "search": "Search",
-        "signin": "SignIn",
-        "orders":"Order",
-        "cart":"Cart",
-        "signup": "Signup",
-        "my_profile": "My Profile",
-        "logout": "LogOut",
-        "signout": "SignOut"
-    },
-    "searchbar":{
-        "text":"What are you looking for?"
-    },
-    "buyer_dashboard":{
-        "select":"Select the type of industrial product you want to buy",
-        "food":"food",
-        "health":"health"
-    },
-    "footer": {
-        "year": "2019",
-        "tc": "Terms and condition of usages"
-    }
+  "intro": "Welcome to the world of Internationalization",
+  "proj_name": "Talos",
+  "project_short_desc": "B2B marketplace of industrial machines, services and equipments",
+  "header": {
+    "ecommerce": "Ecommerce 2.0",
+    "lang_fr": "Français",
+    "lang_en": "English",
+    "lang_hn": "Hindi(हिंदी)",
+    "lang_pt": "Português",
+    "home": "Home",
+    "dashboard":"Dashboard",
+    "service": "Service",
+    "about_us": "About US",
+    "contact_us": "Contact US",
+    "product": "Product",
+    "user": "User",
+    "search": "Search",
+    "signin": "SignIn",
+    "orders": "Order",
+    "cart": "Cart",
+    "signup": "Signup",
+    "my_profile": "My Profile",
+    "logout": "LogOut",
+    "signout": "SignOut"
+  },
+  "searchbar": {
+    "text": "What are you looking for?"
+  },
+  "buyer_dashboard": {
+    "select": "Select the type of industrial product you want to buy",
+    "food": "food",
+    "health": "health",
+    "eletronics": "Eletronics and IoT",
+    "heavy": "Heavy equipments",
+    "construction": "Biulding",
+    "farming": "Farming and chemistry",
+    "recomended": "Recomended products",
+    "most": "Most buyed",
+    "best": "Best avaliation products",
+    "wish": "Wish List"
+  },
+  "comment": {
+    "title": "Our customers love us",
+    "note": "Check out the reviews of this product"
+  },
+  "order": {
+    "title_actual": "Actual order",
+    "title_last":"Last order",
+    "title_shipment":"Shipment tracking",
+    "details":"Details",
+    "shipped":"Shipped via",
+    "status":"Status",
+    "expec":"Expected date",
+    "confirmed":"Order confirmed",
+    "processing":"Processing order",
+    "quality":"Quality check",
+    "dispatched":"Dispatched item",
+    "delivered":"Order delivered"
+  },
+  "seller_dashboard":{
+    "title":"Welcome to seller dashboard",
+    "subtitle":"Seller can manage product and order details.",
+    "line":"Sales Year performance",
+    "pie":"Sales per country",
+    "bar":"Most selled products by category"
+  },
+  "footer": {
+    "year": "2019",
+    "tc": "Terms and condition of usages"
+  }
 }

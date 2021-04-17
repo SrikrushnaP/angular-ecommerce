@@ -42,12 +42,6 @@
           }}</a>
         </div>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" routerLink="/home"
-          >{{ "header.home" | translate }}
-          <span class="sr-only">(current)</span></a
-        >
-      </li>
       <!-- <li class="nav-item">
                 <a class="nav-link" href="#">{{'header.service' | translate}}</a>
             </li> -->
@@ -71,6 +65,12 @@
           "header.product" | translate
         }}</a>
       </li>
+      <li class="nav-item" *ngIf="user_role == 'seller'">
+        <a class="nav-link" routerLink="seller-dashboard">{{
+          "header.dashboard" | translate
+        }}</a>
+      </li>
+      
       <li class="nav-item" *ngIf="user_role == 'admin'">
         <a class="nav-link" routerLink="/admin/product">{{
           "header.product" | translate

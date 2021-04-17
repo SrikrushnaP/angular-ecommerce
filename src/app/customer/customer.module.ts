@@ -18,9 +18,10 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatButtonModule } from '@angular/material/button';
 import { TranslateModule } from '@ngx-translate/core';
 import { CartComponent } from './buyer/cart/cart.component';
+import { ProductCardComponent } from './buyer/product-card/product-card.component';
 
 @NgModule({
-  declarations: [BuyerDashboardComponent, SellerDashboardComponent, SigninSignupComponent, CheckoutComponent, CommentComponent, CarrouselComponent, LinechartComponent, PiechartComponent, SearchbarComponent, BarchartComponent, OrdersComponent, CartComponent],
+  declarations: [BuyerDashboardComponent, SellerDashboardComponent, SigninSignupComponent, CheckoutComponent, CommentComponent, CarrouselComponent, LinechartComponent, PiechartComponent, SearchbarComponent, BarchartComponent, OrdersComponent, CartComponent, ProductCardComponent],
   imports: [
     CommonModule,
     MatIconModule,
