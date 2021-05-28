@@ -1,27 +1,190 @@
 <div class="contact-us">
-        <h1>Love to Hear From You</h1>
-        <div class="row">
-            <div class="col-md-9">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque cumque voluptates vitae qui rem nobis blanditiis, odit quos magni, totam nesciunt, debitis ea facilis voluptatem sint optio. Soluta adipisci officia dicta commodi minus, natus molestiae placeat labore! Quod culpa natus sint odit minima. Maiores sunt repellat ut a pariatur aspernatur.
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d405691.5814439776!2d-122.32199106332915!3d37.40247131407771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb68ad0cfc739%3A0x7eb356b66bd4b50e!2sSilicon%20Valley%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1567518063798!5m2!1sen!2sin" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            </div>
-            <div class="col-md-3">
-                <h3>Postal Address</h3>
-                <p>
-                    Address Line 1
-                    Address Line 2 <br>
-                    City
-                    State
-                    Country <br>
-                    Pin code- 560037
-                </p>
-                <h3>Email</h3>
-                <p><strong>Office:</strong>office@gmail.com</p>
-                <p><strong>Personal:</strong>personal@gmail.com</p>
-                <h3>Phone</h3>
-                <p><strong>Office:</strong>+91-1234567890</p>
-                <p><strong>Work:</strong>+91-1234567891</p>
-            </div>
-        </div>
-        
+  <h1>Love to Hear From You</h1>
+  <div class="row">
+    <div class="col-md-9">
+      <h1>FAQ</h1>
+      <mat-accordion>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title> O que é vendido no Talos?</mat-panel-title>
+          </mat-expansion-panel-header>
+          <p>
+            No marketplace Talos, é vendido produtos como maquinários,
+            equipamentos eletronicos, componentes de internet das coisas(IoT), e
+            ferramentas para fins industriais, seja ele da industria quimica,
+            alimenticia, farmaceutica, agricola, eletroncia etc
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title
+              >Qual a diferencial da Talos em relação aos outros marketplaces do
+              mercado?</mat-panel-title
+            >
+          </mat-expansion-panel-header>
+          <p>
+            Além de atuarmos com uma comissão menor do que os outros
+            competidores, nós possuimos presença em midias sociais como
+            Instagram e Linkedin, seguindo estratégias de conteúdo, e também
+            possuimos um design simplificado para facilitar a experiencia do
+            usuário. Outro diferencial nosso é possuimos um sistema de feedback
+            para melhorar a qualidade da entrega e da tecnologia dos nossos
+            produtos
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Como funciona o pagamento na Talos?</mat-panel-title
+            >
+          </mat-expansion-panel-header>
+          <p>
+            Nesta plataforma, voce pode pagar por meio de cartão de crédito ou
+            débito, Além de outras formas como Stripe e gift card.
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Quais são os custos para vender na Talos?</mat-panel-title
+            >
+          </mat-expansion-panel-header>
+          <p>
+            Para os vendedores, será cobrado apenas uma comissão de 7.5%, mas
+            para aqueles que assinarem um contrato de exclusividade, será apenas
+            de 4.5%
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Perdi uma promoção, o que faço para saber de futuros
+              descontos?</mat-panel-title
+            >
+          </mat-expansion-panel-header>
+          <p>
+            Acompanhe nossa nwesletter sobre industria e suas tendencias, pois
+            geralmente anunciamos nossas campanhas de descontos por lá, além de
+            ficar sabendo de ferramentas que podem ajudar seu negócio
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Quais paises eu posso comprar produtos?</mat-panel-title
+            >
+          </mat-expansion-panel-header>
+          <p>
+            Como a plataforma da Talos atua no sistema de pagamento chamado
+            Stripe Connect Atuamos nos paises onde este meio é aceito, como por
+            exemplo:
+            <br />
+            Brasil
+            <br />
+            Mexico
+            <br />
+            EUA
+            <br />
+            Canadá
+            <br />
+            Alemanha
+            <br />
+            Reino Unido
+            <br />
+            Japão
+            <br />
+            India
+            <br />
+            Singapura
+            <br />
+            França
+            <br />
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Meu produto veio com defeito, o que fazer?</mat-panel-title
+            >
+          </mat-expansion-panel-header>
+          <p>
+            Busque negociar com o vendedor sobre o ocorrido, além de contactar
+            nosso canal de atendimendo e o serviço anti-fraude do marketplace.
+            Lembre sempre de dar um feedback da compra para fortalecer nossa
+            plataforma e melhorar a qualidade das entregas dos vendedores
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Onde posso saber mais para conseguir vender meus produtos nesta
+              plataforma?</mat-panel-title
+            >
+          </mat-expansion-panel-header>
+          <p>
+            Voce pode assinar nossa newsletter par vendedores, nela abordamos
+            tópicos como precificação, SEO, relacionamento com consumidor e
+            tendencias do mercado industrial
+          </p>
+        </mat-expansion-panel>
+        <mat-expansion-panel
+          (opened)="panelOpenState = true"
+          (closed)="panelOpenState = false"
+        >
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              Quais produtos não são permitidos?</mat-panel-title
+            >
+          </mat-expansion-panel-header>
+          <p>
+            Segue a lista do que não podeser vendido neste site:
+            <br />
+            Produtos ilegais nas jurisdições dos países que a Talos atue
+            <br />
+            Fraudes
+            <br />
+            Produtos com defeito
+            <br />
+          </p>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+    <div class="col-md-3">
+      <h3>Postal Address</h3>
+      <p>
+        Avenue North and south <br />
+        Campinas São Paulo Brazil <br />
+        Pin code- 12212
+      </p>
+      <h3>contact@talos.com</h3>
+      <p><strong>Oportunities:</strong>hr@talos.com</p>
+      <p><strong>Merchandising:</strong>Marketing@talos.com</p>
+      <h3>Phone</h3>
+      <p><strong>Office:</strong>+91-1234567890</p>
+    </div>
+  </div>
 </div>

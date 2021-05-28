@@ -10,8 +10,8 @@
       "address": {
         "addLine1": "Marathalli",
         "addLine2": "Aswathnagar",
-        "city": "Bangalore",
-        "state": "Choose...",
+        "city": "Ho Chi Min city",
+        "country": "India",
         "zipCode": "560037"
       },
       "language": [
@@ -37,7 +37,7 @@
         "addLine1": "Marathalli",
         "addLine2": "Aswathnagar",
         "city": "Bangalore",
-        "state": "Choose...",
+        "country": "Vietman",
         "zipCode": "560037"
       },
       "language": [
@@ -62,8 +62,8 @@
         "id": 0,
         "addLine1": "Marathalli",
         "addLine2": "Aswathnagar",
-        "city": "Bangalore",
-        "state": "Choose...",
+        "city": "Instanbul",
+        "country": "Turkey",
         "zipCode": "560037"
       },
       "aboutYou": "djdhjdh",
@@ -75,120 +75,36 @@
   "products": [
     {
       "id": 1,
-      "name": "Polyester Door Curtain",
-      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jcf487k0/curtain/w/e/y/elegant-cream-door-curtains-set-of-2-213-soe-fsb-120-120-eyelet-original-imaffk7f9wng4v4m.jpeg",
-      "productDesc": "Transform the ambiance of your home with these elegant, crushed texture, light weight, solid color curtains. These curtains are available in several colors and sizes to match to your home decor and the gracefully flowing polyester is durable and machine washable for your convenience.",
-      "mrp": "1000",
-      "dp": "499",
-      "status": "publish"
+      "name": "industrial steam cooker",
+      "uploadPhoto": "https://img.directindustry.com/images_di/photo-g/63224-6271159.jpg",
+      "productDesc": "can cook, dry and sterilise up to 2000 litres",
+      "mrp": "1800",
+      "dp": "850",
+      "brand": "3M",
+      "status": "publish",
+      "currency": "EUR"
     },
     {
       "id": 2,
-      "name": "Water Bottle",
-      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/bottle/w/5/g/1000-cello-h2o-cello-h2o-water-bottel-cello-original-imaeqtj3vyxyehmn.jpeg",
-      "productDesc": "Hygienic bottle: The bottle is made of 100% food grade material & is BPA free ensures a safe drinking. Crystal Clarity: It's sheer body helps to easily identify the contents & also adds beauty to the liquid that you put in, Leak Proof: The bottle has a liquid tight cap that prevents leakage & is unbreakable. Freezer safe: These bottles are compatible with refrigerator & not being curvy the bottle occupies less space. Looks pretty in the fridge or on the table top.",
-      "mrp": "123",
-      "dp": "99",
-      "status": "publish"
+      "name": "Industrial 3d printer",
+      "uploadPhoto": "https://hage3d.com/wordpress/wp-content/uploads/2018/11/HAGE3D-3D-Drucker-175X-16_9-2-300x169.png",
+      "productDesc": "3D printer for projects of design and hardware in large scale",
+      "mrp": "1250",
+      "dp": "900",
+      "brand": "Panasonic",
+      "status": "publish",
+      "currency": "USD"
     },
     {
       "id": 3,
-      "name": "Metro Living Self Design Pillows Cover",
-      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jjsw4nk0/cushion-pillow-cover/e/z/z/epl12-metro-living-original-imaf7ah6zstjyevd.jpeg",
-      "productDesc": "Regional Speciality\nRajasthan\nFabric Care\nMachinne Wash, Do not Bleach, Wash in Cold Water\nThread Count\n104\nSales Package\nPack of 2 Pillow Cover",
-      "mrp": "500",
-      "dp": "399",
-      "status": "draft"
-    },
-    {
-      "id": 4,
-      "name": "Metro Living Self Design Pillows Cover",
-      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jjsw4nk0/cushion-pillow-cover/e/z/z/epl12-metro-living-original-imaf7ah6zstjyevd.jpeg",
-      "productDesc": "Regional Speciality\nRajasthan\nFabric Care\nMachinne Wash, Do not Bleach, Wash in Cold Water\nThread Count\n104\nSales Package\nPack of 2 Pillow Cover",
-      "mrp": "500",
-      "dp": "399",
-      "status": "draft"
-    },
-    {
-      "id": 5,
-      "name": "TIZUM Aluminium Portable Stand",
-      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jx0prbk0/mobile-holder/t/3/d/aluminium-portable-stand-with-convenient-charging-port-design-original-imafhkkxjvphhhgz.jpeg",
-      "productDesc": "The aluminium material used in the stand makes it sturdy and strong. Multi-angle fold-ability provides with a seamless viewing experience. The light weight of this stand allows it to be carried around everywhere conveniently. Universally designed to fit 3.5-8 inch phones and tablets without hassle. Apart from phones and tabs, the stand also holds gaming console like Nintendo play. •Aluminium Stand with Multi-Angle foldability ",
-      "mrp": "300",
-      "dp": "199",
-      "status": "inactive"
-    },
-    {
-      "id": 6,
-      "name": "Polyester Door Curtain",
-      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jcf487k0/curtain/w/e/y/elegant-cream-door-curtains-set-of-2-213-soe-fsb-120-120-eyelet-original-imaffk7f9wng4v4m.jpeg",
-      "productDesc": "Transform the ambiance of your home with these elegant, crushed texture, light weight, solid color curtains. These curtains are available in several colors and sizes to match to your home decor and the gracefully flowing polyester is durable and machine washable for your convenience.",
+      "name": "OTC FD-V8 6-Axis Robot",
+      "uploadPhoto": "https://www.eurobots.net/media/robot/det_685_otc-daihen-almega-ax-v6_arc_welding.jpg",
+      "productDesc": "Industrial robot for solding components",
       "mrp": "1000",
       "dp": "499",
-      "status": "publish"
-    },
-    {
-      "id": 7,
-      "name": "Water Bottle",
-      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/bottle/w/5/g/1000-cello-h2o-cello-h2o-water-bottel-cello-original-imaeqtj3vyxyehmn.jpeg",
-      "productDesc": "Hygienic bottle: The bottle is made of 100% food grade material & is BPA free ensures a safe drinking. Crystal Clarity: It's sheer body helps to easily identify the contents & also adds beauty to the liquid that you put in, Leak Proof: The bottle has a liquid tight cap that prevents leakage & is unbreakable. Freezer safe: These bottles are compatible with refrigerator & not being curvy the bottle occupies less space. Looks pretty in the fridge or on the table top.",
-      "mrp": "123",
-      "dp": "99",
-      "status": "publish"
-    },
-    {
-      "id": 8,
-      "name": "Metro Living Self Design Pillows Cover",
-      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jjsw4nk0/cushion-pillow-cover/e/z/z/epl12-metro-living-original-imaf7ah6zstjyevd.jpeg",
-      "productDesc": "Regional Speciality\nRajasthan\nFabric Care\nMachinne Wash, Do not Bleach, Wash in Cold Water\nThread Count\n104\nSales Package\nPack of 2 Pillow Cover",
-      "mrp": "500",
-      "dp": "399",
-      "status": "draft"
-    },
-    {
-      "id": 9,
-      "name": "TIZUM Aluminium Portable Stand",
-      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jx0prbk0/mobile-holder/t/3/d/aluminium-portable-stand-with-convenient-charging-port-design-original-imafhkkxjvphhhgz.jpeg",
-      "productDesc": "The aluminium material used in the stand makes it sturdy and strong. Multi-angle fold-ability provides with a seamless viewing experience. The light weight of this stand allows it to be carried around everywhere conveniently. Universally designed to fit 3.5-8 inch phones and tablets without hassle. Apart from phones and tabs, the stand also holds gaming console like Nintendo play. •Aluminium Stand with Multi-Angle foldability ",
-      "mrp": "300",
-      "dp": "199",
-      "status": "inactive"
-    },
-    {
-      "id": 10,
-      "name": "Polyester Door Curtain",
-      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jcf487k0/curtain/w/e/y/elegant-cream-door-curtains-set-of-2-213-soe-fsb-120-120-eyelet-original-imaffk7f9wng4v4m.jpeg",
-      "productDesc": "Transform the ambiance of your home with these elegant, crushed texture, light weight, solid color curtains. These curtains are available in several colors and sizes to match to your home decor and the gracefully flowing polyester is durable and machine washable for your convenience.",
-      "mrp": "1000",
-      "dp": "499",
-      "status": "publish"
-    },
-    {
-      "id": 11,
-      "name": "Water Bottle",
-      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/bottle/w/5/g/1000-cello-h2o-cello-h2o-water-bottel-cello-original-imaeqtj3vyxyehmn.jpeg",
-      "productDesc": "Hygienic bottle: The bottle is made of 100% food grade material & is BPA free ensures a safe drinking. Crystal Clarity: It's sheer body helps to easily identify the contents & also adds beauty to the liquid that you put in, Leak Proof: The bottle has a liquid tight cap that prevents leakage & is unbreakable. Freezer safe: These bottles are compatible with refrigerator & not being curvy the bottle occupies less space. Looks pretty in the fridge or on the table top.",
-      "mrp": "123",
-      "dp": "99",
-      "status": "publish"
-    },
-    {
-      "id": 12,
-      "name": "Metro Living Self Design Pillows Cover",
-      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jjsw4nk0/cushion-pillow-cover/e/z/z/epl12-metro-living-original-imaf7ah6zstjyevd.jpeg",
-      "productDesc": "Regional Speciality\nRajasthan\nFabric Care\nMachinne Wash, Do not Bleach, Wash in Cold Water\nThread Count\n104\nSales Package\nPack of 2 Pillow Cover",
-      "mrp": "500",
-      "dp": "399",
-      "status": "draft"
-    },
-    {
-      "id": 13,
-      "name": "TIZUM Aluminium Portable Stand",
-      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jx0prbk0/mobile-holder/t/3/d/aluminium-portable-stand-with-convenient-charging-port-design-original-imafhkkxjvphhhgz.jpeg",
-      "productDesc": "The aluminium material used in the stand makes it sturdy and strong. Multi-angle fold-ability provides with a seamless viewing experience. The light weight of this stand allows it to be carried around everywhere conveniently. Universally designed to fit 3.5-8 inch phones and tablets without hassle. Apart from phones and tabs, the stand also holds gaming console like Nintendo play. •Aluminium Stand with Multi-Angle foldability ",
-      "mrp": "300",
-      "dp": "199",
-      "status": "inactive"
+      "brand": "Eurobots",
+      "status": "publish",
+      "currency": "GBP"
     }
   ],
   "orders": [
@@ -210,7 +126,7 @@
         "addLine1": "Marathalli",
         "addLine2": "Aswathnagar",
         "city": "Bangalore",
-        "state": "Choose...",
+        "country": "Choose...",
         "zipCode": 560037
       },
       "contact": "09040398006",
@@ -221,10 +137,60 @@
       "userId": 3,
       "sellerId": 2,
       "product": {
-        "id": 1,
-        "name": "Polyester Door Curtain",
-        "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jcf487k0/curtain/w/e/y/elegant-cream-door-curtains-set-of-2-213-soe-fsb-120-120-eyelet-original-imaffk7f9wng4v4m.jpeg",
-        "productDesc": "Transform the ambiance of your home with these elegant, crushed texture, light weight, solid color curtains. These curtains are available in several colors and sizes to match to your home decor and the gracefully flowing polyester is durable and machine washable for your convenience.",
+        "id": 3,
+        "name": "Pro kit Arduino",
+        "uploadPhoto": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR8BtoTvSjwvjPFLKO35K8IM5yFY4EPewcZ1mAXbjhRityyvUKMv4BpO6fKcXbhgnhm6nQrZqS4Drh1ZgM56DVzL1UM1Oe8kvjZwz1iGLYyEovU2bRQp62uXA&usqp=CAE",
+        "productDesc": "Arduino kit with advanced modules",
+        "mrp": "500",
+        "dp": "399",
+        "status": "draft"
+      },
+      "deliveryAddress": {
+        "id": 0,
+        "addLine1": "Marathalli",
+        "addLine2": "Aswathnagar",
+        "city": "Bangalore",
+        "country": "Choose...",
+        "zipCode": 560037
+      },
+      "contact": "0123456789",
+      "dateTime": "03/01/2021"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "sellerId": 2,
+      "product": {
+        "id": 2,
+        "name": "Industrial 3d printer",
+        "uploadPhoto": "https://hage3d.com/wordpress/wp-content/uploads/2018/11/HAGE3D-3D-Drucker-175X-16_9-2-300x169.png",
+        "productDesc": "3D printer for projects of design and hardware in large scale",
+        "currency": "USD",
+        "mrp": "1250",
+        "dp": "900",
+        "status": "publish"
+      },
+      "deliveryAddress": {
+        "id": 0,
+        "addLine1": "Marathalli",
+        "addLine2": "Aswathnagar",
+        "city": "Instanbul",
+        "country": "Turkey",
+        "zipCode": 560037
+      },
+      "contact": "0123456789",
+      "dateTime": "20/02/2021"
+    },
+    {
+      "id": 4,
+      "userId": 3,
+      "sellerId": 2,
+      "product": {
+        "id": 3,
+        "name": "OTC FD-V8 6-Axis Robot",
+        "uploadPhoto": "https://www.eurobots.net/media/robot/det_685_otc-daihen-almega-ax-v6_arc_welding.jpg",
+        "productDesc": "Industrial robot for solding components",
+        "currency": "GBP",
         "mrp": "1000",
         "dp": "499",
         "status": "publish"
@@ -233,12 +199,62 @@
         "id": 0,
         "addLine1": "Marathalli",
         "addLine2": "Aswathnagar",
-        "city": "Bangalore",
-        "state": "Choose...",
+        "city": "Instanbul",
+        "country": "Turkey",
         "zipCode": 560037
       },
-      "contact": "09040398006",
-      "dateTime": "30/08/2019"
+      "contact": "0123456789",
+      "dateTime": "20/02/2021"
+    },
+    {
+      "id": 5,
+      "userId": 3,
+      "sellerId": 2,
+      "product": {
+        "id": 1,
+        "name": "industrial steam cooker",
+        "uploadPhoto": "https://img.directindustry.com/images_di/photo-g/63224-6271159.jpg",
+        "productDesc": "can cook, dry and sterilise up to 2000 litres",
+        "currency": "EUR",
+        "mrp": "1800",
+        "dp": "850",
+        "status": "publish"
+      },
+      "deliveryAddress": {
+        "id": 0,
+        "addLine1": "Marathalli",
+        "addLine2": "Aswathnagar",
+        "city": "Instanbul",
+        "country": "Turkey",
+        "zipCode": 560037
+      },
+      "contact": "0123456789",
+      "dateTime": "20/03/2021"
+    },
+    {
+      "id": 6,
+      "userId": 3,
+      "sellerId": 2,
+      "product": {
+        "id": 1,
+        "name": "industrial steam cooker",
+        "uploadPhoto": "https://img.directindustry.com/images_di/photo-g/63224-6271159.jpg",
+        "productDesc": "can cook, dry and sterilise up to 2000 litres",
+        "currency": "EUR",
+        "mrp": "1800",
+        "dp": "850",
+        "status": "publish"
+      },
+      "deliveryAddress": {
+        "id": 0,
+        "addLine1": "Marathalli",
+        "addLine2": "Aswathnagar",
+        "city": "Instanbul",
+        "country": "Turkey",
+        "zipCode": 560037
+      },
+      "contact": "0123456789",
+      "dateTime": "20/03/2021"
     }
   ]
 }

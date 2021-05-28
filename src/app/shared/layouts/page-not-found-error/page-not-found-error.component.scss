@@ -29,30 +29,25 @@
             transform: translateX(-50%);
     z-index: -1;
   }
-  .notfound .notfound-404 h1 {
-    font-family: 'Maven Pro', sans-serif;
-    color: #ececec;
-    font-weight: 900;
-    font-size: 276px;
-    margin: 0px;
+  .notfound .notfound-404 img {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: 85%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
   }
   .notfound h2 {
     font-family: 'Maven Pro', sans-serif;
-    font-size: 46px;
+    font-size: 30px;
     color: #000;
     font-weight: 900;
     text-transform: uppercase;
-    margin: 0px;
+    margin: 250px 0 0;
   }
   .notfound p {
     font-family: 'Maven Pro', sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     color: #000;
     font-weight: 400;
     text-transform: uppercase;
