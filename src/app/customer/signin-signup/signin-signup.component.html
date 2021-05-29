@@ -154,7 +154,6 @@
                     <div class="form-item">
                         <label for="roleSelect">What You Want To Do</label>
                         <select class="form-control" formControlName="role" [ngClass]="{'is-invalid':signUpsubmitted && rf.role.errors}">
-                            <option value="seller">Sell</option>
                             <option value="buyer">Buy</option>
                         </select>
                         <div *ngIf="signUpsubmitted && rf.role.errors" class="invalid-feedback">
