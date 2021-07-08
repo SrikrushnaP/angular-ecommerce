@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "node server",
+    "start": "json-server mock-api-data.json",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",

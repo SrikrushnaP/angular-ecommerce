@@ -39,27 +39,27 @@
   <h2>{{"buyer_dashboard.recomended"| translate}}</h2>
 </nav>
 <div class="row">
-  <div class="col-sm-4 product" *ngFor="let product of all_products">
+  <div class="col-sm-4 product">
     <div class="card">
       <img
-        src="{{ product.uploadPhoto }}"
+        src="https://img.directindustry.com/images_di/photo-g/63224-6271159.jpg"
         class="card-img-top"
-        alt="{{ product.name }}"
+        alt="industrial steam cooker"
       />
       <div class="card-body">
-        <h3 class="card-title">{{ product.name }}</h3>
+        <h3 class="card-title">industrial steam cooker</h3>
         <p>
           <span class="float-left"
             ><strong>MRP</strong>:
-            <del>{{ product.mrp }} ${{ product.currency }}</del></span
+            <del>1800 $EUR</del></span
           >
           <span class="float-right"
-            ><strong>DP</strong>: {{ product.dp }} ${{ product.currency }}</span
+            ><strong>DP</strong>: 850 $EUR</span
           >
         </p>
         <br />
         <p class="card-text product-desc">
-          {{ product.productDesc }} <b>{{ product.brand }}</b>
+          can cook, dry and sterilise up to 2000 litres <b>3M</b>
         </p>
         <div class="rating">
           <mat-icon>star</mat-icon>
@@ -94,27 +94,27 @@
   <h2>{{"buyer_dashboard.most"| translate}}</h2>
 </nav>
 <div class="row">
-  <div class="col-sm-4 product" *ngFor="let product of all_products">
+  <div class="col-sm-4 product">
     <div class="card">
       <img
-        src="{{ product.uploadPhoto }}"
+        src="https://www.eurobots.net/media/robot/det_685_otc-daihen-almega-ax-v6_arc_welding.jpg"
         class="card-img-top"
         alt="{{ product.name }}"
       />
       <div class="card-body">
-        <h3 class="card-title">{{ product.name }}</h3>
+        <h3 class="card-title">OTC FD-V8 6-Axis Robot</h3>
         <p>
           <span class="float-left"
             ><strong>MRP</strong>:
-            <del>{{ product.mrp }} ${{ product.currency }}</del></span
+            <del>1000 $ GBP</del></span
           >
           <span class="float-right"
-            ><strong>DP</strong>: {{ product.dp }} ${{ product.currency }}</span
+            ><strong>DP</strong>: 499 $ GBP</span
           >
         </p>
         <br />
         <p class="card-text product-desc">
-          {{ product.productDesc }} <b>{{ product.brand }}</b>
+          Industrial robot for solding components <b>Eurobots</b>
         </p>
         <div class="rating">
           <mat-icon>star</mat-icon>
@@ -144,36 +144,32 @@
     </div>
   </div>
 </div>
-<div class="card-discount">
-  <img class="card-discount-img" src="assets/discount.jpg" alt="Discount" />
-  <img class="card-discount-img" src="assets/discount2.jpg" alt="Discount" />
-</div>
 <br />
 <nav aria-label="breadcrumb">
   <h2>{{"buyer_dashboard.best"| translate}}</h2>
 </nav>
 <div class="row">
-  <div class="col-sm-4 product" *ngFor="let product of all_products">
+  <div class="col-sm-4 product">
     <div class="card">
       <img
-        src="{{ product.uploadPhoto }}"
+        src="https://hage3d.com/wordpress/wp-content/uploads/2018/11/HAGE3D-3D-Drucker-175X-16_9-2-300x169.png"
         class="card-img-top"
-        alt="{{ product.name }}"
+        alt="Industrial 3d printer"
       />
       <div class="card-body">
-        <h3 class="card-title">{{ product.name }}</h3>
+        <h3 class="card-title">Industrial 3d printer</h3>
         <p>
           <span class="float-left"
             ><strong>MRP</strong>:
-            <del>{{ product.mrp }} ${{ product.currency }}</del></span
+            <del>1250 $ USD</del></span
           >
           <span class="float-right"
-            ><strong>DP</strong>: {{ product.dp }} ${{ product.currency }}</span
+            ><strong>DP</strong>: 900 $ USD</span
           >
         </p>
         <br />
         <p class="card-text product-desc">
-          {{ product.productDesc }} <b>{{ product.brand }}</b>
+          3D printer for projects of design and hardware in large scale <b>Panasonic</b>
         </p>
         <div class="rating">
           <mat-icon>star</mat-icon>
