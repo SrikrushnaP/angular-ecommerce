@@ -1,0 +1,71 @@
+{
+  "intro": "Bem vindo ao sistema de Internacionalização",
+  "proj_name": "Talos",
+  "project_short_desc": "Um Marketplace B2B de equipamentos e maquinas industriais",
+  "header": {
+    "ecommerce": "Ecommerce 2.0",
+    "lang_fr": "Français",
+    "lang_en": "English",
+    "lang_hn": "Hindi(हिंदी)",
+    "lang_pt": "Português",
+    "home": "Pagina principal",
+    "service": "Servicos",
+    "about_us": "Sobre nós",
+    "dashboard":"Dashboard",
+    "contact_us": "Contato",
+    "product": "Produtos",
+    "user": "Usuarios",
+    "signin": "Login",
+    "cart": "Carrinho",
+    "orders": "Pedido",
+    "signup": "Cadastro",
+    "my_profile": "Meu Perfil",
+    "logout": "Sair",
+    "signout": "Sair"
+  },
+  "searchbar": {
+    "text": "O que voce procura?"
+  },
+  "buyer_dashboard": {
+    "select": "Selecione o tipo de produto que você deseja",
+    "food": "Alímentos",
+    "health": "saúde",
+    "eletronics": "Eletronicos e IoT",
+    "heavy": "Maquinas pesadas",
+    "construction": "Construção",
+    "farming": "Fazenda e quimíca",
+    "recomended": "Produtos recomendados",
+    "most": "Mais comprados",
+    "best": "Melhores avaliações",
+    "wish": "Lista de desejos"
+  },
+  "comment": {
+    "title": "Nossos clientes nos amam",
+    "note": "Consulte a avaliação de nossos produtos"
+  },
+  "order": {
+    "title_actual": "Pedido atual",
+    "title_last":"Pedidos anteriores",
+    "title_shipment":"Rastreamento da entrega",
+    "details":"Detalhes",
+    "shipped":"Enviado via",
+    "status":"Estágio",
+    "expec":"Previsão de entrega",
+    "confirmed":"Pedido processado",
+    "processing":"Processando",
+    "quality":"Analíse de qualidade",
+    "dispatched":"Para entrega",
+    "delivered":"Recebido"
+  },
+  "seller_dashboard":{
+    "title":"Bem vindo ao dashboard do vendedor",
+    "subtitle":"Por aqui o vendedor pode gerenciar suas vendas e pedidos",
+    "line":"Performance das vendas por ano",
+    "pie":"Vendas por país",
+    "bar":"Produtos mais vendidos por categoria"
+  },
+  "footer": {
+    "year": "2019",
+    "tc": "Termos de uso"
+  }
+}

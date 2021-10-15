@@ -1,0 +1,72 @@
+{
+  "intro": "Bienvenue dans le monde de l'internalisation",
+  "proj_name": "Talos",
+  "project_short_desc": "Marché en ligne d'équipements industriels",
+  "header": {
+    "ecommerce": "Ecommerce 2.0",
+    "lang_fr": "Français",
+    "lang_en": "English",
+    "lang_hn": "Hindi(हिंदी)",
+    "lang_pt": "Português",
+    "home": "Menu",
+    "service": "services",
+    "dashboard":"Tableau",
+    "about_us": "A propos de nous",
+    "contact_us": "Contactez-nous",
+    "product": "Produit",
+    "user": "Utilisateur",
+    "orders": "Demande",
+    "search": "recherch",
+    "cart": "Chariot",
+    "signin": "s'authentifier",
+    "signup": "s'inscrire",
+    "logout": "Se déconnecter",
+    "my_profile": "Mon profil",
+    "signout": "Déconnexion"
+  },
+  "searchbar": {
+    "text": "Quois vous rechercher?"
+  },
+  "buyer_dashboard": {
+    "select": "Sélectionnez le type de produit que vous souhaitez",
+    "food": "Alimentation",
+    "health": "Santé",
+    "eletronics": "Électronique et IoT",
+    "heavy": "Grands équiménts",
+    "construction": "Connstruction",
+    "farming": "Ferme et chimie",
+    "recomended": "Produits recommandés",
+    "most": "Plus acheté",
+    "best": "Bien évalué",
+    "wish": "Liste de souhaits"
+  },
+  "comment": {
+    "title": "Nos clients nous aiment",
+    "note": "Consultez les avis sur ce produit"
+  },
+  "order": {
+    "title_actual": "Ordre actuel",
+    "title_last":"Ordre précédent",
+    "title_shipment":"Suivi de la livraison",
+    "details":"Détails",
+    "shipped":"Soumis par",
+    "status":"Statut",
+    "expec":"Livraison estimée",
+    "confirmed":"Ordre confirmé",
+    "processing":"Traitement",
+    "quality":"Analise de qualité",
+    "dispatched":"Livraison",
+    "delivered":"Livré"
+  },
+  "seller_dashboard":{
+    "title":"Bienvenue dans le tableau de bord des vendeurs",
+    "subtitle":"Vous gérez ici les ventes et les commandes",
+    "line":"Performance des dernières ventes par année",
+    "pie":"Ventes par année",
+    "bar":"Produit le plus acheté par catégorie"
+  },
+  "footer": {
+    "year": "2019",
+    "tc": "conditions d'utilisation"
+  }
+}

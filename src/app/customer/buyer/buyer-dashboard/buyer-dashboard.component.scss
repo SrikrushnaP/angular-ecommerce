@@ -1,21 +1,52 @@
-.product{
-    margin-top: 1rem;
-    .card{
-        img{
-            height: 9rem;
-            padding: 1rem;
-        }
-        .card-body{
-            .product-desc{
-                height: 9rem;
-                overflow: hidden;
-            //   text-overflow:ellipsis;
-            }
-            .card-title{
-                white-space: nowrap; 
-                overflow: hidden;
-                text-overflow:ellipsis;
-            }
-        }
+.product {
+  margin-top: 1rem;
+  .card {
+    img {
+      height: 250px;
+      padding: 1rem;
     }
+    .card-body {
+      .product-desc {
+        height: 9rem;
+        overflow: hidden;
+        //   text-overflow:ellipsis;
+      }
+      .float-right {
+        font-size: 22px;
+      }
+      .card-title {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      .card-text {
+        opacity: 0.5;
+      }
+    }
+  }
+}
+.rating {
+  color: #007bff;
+  margin: 1rem 0;
+}
+.card-discount-img{
+  margin: 0 25px 0 0;
+}
+.searchcard{
+  margin: 0 0 0 350px;
+}
+.carrouselcard{
+  padding:0;
+  margin:0;
+}
+.Type-industry{
+  flex-direction: column;
+  display: inline-flex;
+}
+.industry-line{
+  flex-direction: row;
+  display: inline-flex;
+  span{
+    margin:0 10px 0;
+  }
 }

@@ -1,0 +1,111 @@
+<mat-accordion>
+  <mat-expansion-panel
+    (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false"
+  >
+    <mat-expansion-panel-header>
+      <mat-panel-title> {{ "order.title_actual" | translate }}</mat-panel-title>
+    </mat-expansion-panel-header>
+    <div class="header">
+      <h1>{{ "order.title_shipment" | translate }}</h1>
+    </div>
+    <div class="content">
+      <div class="content1">
+        <h2>{{ "order.details" | translate }}</h2>
+      </div>
+      <div class="content2">
+        <div class="content2-header1">
+          <p>{{ "order.shipped" | translate }} : <span>Ipsum Dolor</span></p>
+        </div>
+        <div class="content2-header1">
+          <p>{{ "order.status" | translate }} : <span>Checking Quality</span></p>
+        </div>
+        <div class="content2-header1">
+          <p>{{ "order.expec" | translate }} : <span>7-NOV-2015</span></p>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <div class="content3">
+        <div class="shipment">
+          <div class="confirm">
+            <div class="imgcircle">
+              <mat-icon>thumb_up</mat-icon>
+            </div>
+            <span class="line"></span>
+            <p>{{ "order.confirmed" | translate }}</p>
+          </div>
+          <div class="process">
+            <div class="imgcircle">
+              <mat-icon>check_circle_outline</mat-icon>
+            </div>
+            <span class="line"></span>
+            <p>{{ "order.processing" | translate }}</p>
+          </div>
+          <div class="quality">
+            <div class="imgcircle">
+              <mat-icon>check_circle</mat-icon>
+            </div>
+            <span class="line"></span>
+            <p>{{ "order.quality" | translate }}</p>
+          </div>
+          <div class="dispatch">
+            <div class="imgcircle">
+              <mat-icon>local_shipping</mat-icon>
+            </div>
+            <span class="line"></span>
+            <p>{{ "order.dispatched" | translate }}</p>
+          </div>
+          <div class="delivery">
+            <div class="imgcircle">
+              <mat-icon>mood</mat-icon>
+            </div>
+            <p>{{ "order.delivered" | translate }}</p>
+          </div>
+          <div class="clear"></div>
+        </div>
+      </div>
+    </div>
+  </mat-expansion-panel>
+  <mat-expansion-panel
+    (opened)="panelOpenState = true"
+    (closed)="panelOpenState = false"
+  >
+    <mat-expansion-panel-header> {{ "order.title_last" | translate }}</mat-expansion-panel-header>
+    <div class="row">
+      <div class="col-sm-4 product" *ngFor="let product of all_products">
+        <div class="card">
+          <img
+            src="{{ product.uploadPhoto }}"
+            class="card-img-top"
+            alt="{{ product.name }}"
+          />
+          <div class="card-body">
+            <h3 class="card-title">{{ product.name }}</h3>
+            <p>
+              <span class="float-left"
+                ><strong>MRP</strong>:
+                <del>{{ product.mrp }} ${{ product.currency }}</del></span
+              >
+              <span class="float-right"
+                ><strong>DP</strong>: {{ product.dp }} ${{
+                  product.currency
+                }}</span
+              >
+            </p>
+            <br />
+            <p class="card-text product-desc">
+              {{ product.productDesc }} <b>{{ product.brand }}</b>
+            </p>
+            <div class="rating">
+              <mat-icon>star</mat-icon>
+              <mat-icon>star</mat-icon>
+              <mat-icon>star</mat-icon>
+              <mat-icon>star</mat-icon>
+              <mat-icon>star_half</mat-icon>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-expansion-panel>
+</mat-accordion>

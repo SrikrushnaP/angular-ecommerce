@@ -1,0 +1,260 @@
+{
+  "user": [
+    {
+      "name": "Srikrushna Pal",
+      "mobNumber": "1234567891",
+      "age": 27,
+      "dob": "1992-09-17",
+      "email": "admin@gmail.com",
+      "password": "123456",
+      "address": {
+        "addLine1": "Marathalli",
+        "addLine2": "Aswathnagar",
+        "city": "Ho Chi Min city",
+        "country": "India",
+        "zipCode": "560037"
+      },
+      "language": [
+        "English",
+        "Oriya/Odiya"
+      ],
+      "gender": "Male",
+      "aboutYou": "I am a programmer...",
+      "uploadPhoto": "C:\\fakepath\\Screenshot-demo from 2019-06-21 17-13-05.png",
+      "agreetc": true,
+      "role": "admin",
+      "id": 1
+    },
+    {
+      "aboutYou": "I am programmer",
+      "age": 25,
+      "agreetc": true,
+      "dob": "2019-12-31",
+      "email": "seller@gmail.com",
+      "gender": "Male",
+      "address": {
+        "id": 0,
+        "addLine1": "Marathalli",
+        "addLine2": "Aswathnagar",
+        "city": "Bangalore",
+        "country": "Vietman",
+        "zipCode": "560037"
+      },
+      "language": [
+        "Oriya/Odiya"
+      ],
+      "mobNumber": "0123456789",
+      "name": "Bijay",
+      "password": "123456",
+      "uploadPhoto": "C:\\fakepath\\Online Application.pdf",
+      "role": "seller",
+      "id": 2
+    },
+    {
+      "name": "Last user",
+      "mobNumber": "0123456789",
+      "age": 25,
+      "dob": "2017-11-30",
+      "email": "buyer@gmail.com",
+      "password": "123456",
+      "gender": "Male",
+      "address": {
+        "id": 0,
+        "addLine1": "Marathalli",
+        "addLine2": "Aswathnagar",
+        "city": "Instanbul",
+        "country": "Turkey",
+        "zipCode": "560037"
+      },
+      "aboutYou": "djdhjdh",
+      "uploadPhoto": "C:\\fakepath\\Online Application.pdf",
+      "role": "buyer",
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "industrial steam cooker",
+      "uploadPhoto": "https://img.directindustry.com/images_di/photo-g/63224-6271159.jpg",
+      "productDesc": "can cook, dry and sterilise up to 2000 litres",
+      "mrp": "1800",
+      "dp": "850",
+      "brand": "3M",
+      "status": "publish",
+      "currency": "EUR"
+    },
+    {
+      "id": 2,
+      "name": "Industrial 3d printer",
+      "uploadPhoto": "https://hage3d.com/wordpress/wp-content/uploads/2018/11/HAGE3D-3D-Drucker-175X-16_9-2-300x169.png",
+      "productDesc": "3D printer for projects of design and hardware in large scale",
+      "mrp": "1250",
+      "dp": "900",
+      "brand": "Panasonic",
+      "status": "publish",
+      "currency": "USD"
+    },
+    {
+      "id": 3,
+      "name": "OTC FD-V8 6-Axis Robot",
+      "uploadPhoto": "https://www.eurobots.net/media/robot/det_685_otc-daihen-almega-ax-v6_arc_welding.jpg",
+      "productDesc": "Industrial robot for solding components",
+      "mrp": "1000",
+      "dp": "499",
+      "brand": "Eurobots",
+      "status": "publish",
+      "currency": "GBP"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "userId": 3,
+      "sellerId": 2,
+      "product": {
+        "id": 1,
+        "name": "Polyester Door Curtain",
+        "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jcf487k0/curtain/w/e/y/elegant-cream-door-curtains-set-of-2-213-soe-fsb-120-120-eyelet-original-imaffk7f9wng4v4m.jpeg",
+        "productDesc": "Transform the ambiance of your home with these elegant, crushed texture, light weight, solid color curtains. These curtains are available in several colors and sizes to match to your home decor and the gracefully flowing polyester is durable and machine washable for your convenience.",
+        "mrp": "1000",
+        "dp": "499",
+        "status": "publish"
+      },
+      "deliveryAddress": {
+        "id": 0,
+        "addLine1": "Marathalli",
+        "addLine2": "Aswathnagar",
+        "city": "Bangalore",
+        "country": "Choose...",
+        "zipCode": 560037
+      },
+      "contact": "09040398006",
+      "dateTime": "18/07/2019"
+    },
+    {
+      "id": 2,
+      "userId": 3,
+      "sellerId": 2,
+      "product": {
+        "id": 3,
+        "name": "Pro kit Arduino",
+        "uploadPhoto": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcR8BtoTvSjwvjPFLKO35K8IM5yFY4EPewcZ1mAXbjhRityyvUKMv4BpO6fKcXbhgnhm6nQrZqS4Drh1ZgM56DVzL1UM1Oe8kvjZwz1iGLYyEovU2bRQp62uXA&usqp=CAE",
+        "productDesc": "Arduino kit with advanced modules",
+        "mrp": "500",
+        "dp": "399",
+        "status": "draft"
+      },
+      "deliveryAddress": {
+        "id": 0,
+        "addLine1": "Marathalli",
+        "addLine2": "Aswathnagar",
+        "city": "Bangalore",
+        "country": "Choose...",
+        "zipCode": 560037
+      },
+      "contact": "0123456789",
+      "dateTime": "03/01/2021"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "sellerId": 2,
+      "product": {
+        "id": 2,
+        "name": "Industrial 3d printer",
+        "uploadPhoto": "https://hage3d.com/wordpress/wp-content/uploads/2018/11/HAGE3D-3D-Drucker-175X-16_9-2-300x169.png",
+        "productDesc": "3D printer for projects of design and hardware in large scale",
+        "currency": "USD",
+        "mrp": "1250",
+        "dp": "900",
+        "status": "publish"
+      },
+      "deliveryAddress": {
+        "id": 0,
+        "addLine1": "Marathalli",
+        "addLine2": "Aswathnagar",
+        "city": "Instanbul",
+        "country": "Turkey",
+        "zipCode": 560037
+      },
+      "contact": "0123456789",
+      "dateTime": "20/02/2021"
+    },
+    {
+      "id": 4,
+      "userId": 3,
+      "sellerId": 2,
+      "product": {
+        "id": 3,
+        "name": "OTC FD-V8 6-Axis Robot",
+        "uploadPhoto": "https://www.eurobots.net/media/robot/det_685_otc-daihen-almega-ax-v6_arc_welding.jpg",
+        "productDesc": "Industrial robot for solding components",
+        "currency": "GBP",
+        "mrp": "1000",
+        "dp": "499",
+        "status": "publish"
+      },
+      "deliveryAddress": {
+        "id": 0,
+        "addLine1": "Marathalli",
+        "addLine2": "Aswathnagar",
+        "city": "Instanbul",
+        "country": "Turkey",
+        "zipCode": 560037
+      },
+      "contact": "0123456789",
+      "dateTime": "20/02/2021"
+    },
+    {
+      "id": 5,
+      "userId": 3,
+      "sellerId": 2,
+      "product": {
+        "id": 1,
+        "name": "industrial steam cooker",
+        "uploadPhoto": "https://img.directindustry.com/images_di/photo-g/63224-6271159.jpg",
+        "productDesc": "can cook, dry and sterilise up to 2000 litres",
+        "currency": "EUR",
+        "mrp": "1800",
+        "dp": "850",
+        "status": "publish"
+      },
+      "deliveryAddress": {
+        "id": 0,
+        "addLine1": "Marathalli",
+        "addLine2": "Aswathnagar",
+        "city": "Instanbul",
+        "country": "Turkey",
+        "zipCode": 560037
+      },
+      "contact": "0123456789",
+      "dateTime": "20/03/2021"
+    },
+    {
+      "id": 6,
+      "userId": 3,
+      "sellerId": 2,
+      "product": {
+        "id": 1,
+        "name": "industrial steam cooker",
+        "uploadPhoto": "https://img.directindustry.com/images_di/photo-g/63224-6271159.jpg",
+        "productDesc": "can cook, dry and sterilise up to 2000 litres",
+        "currency": "EUR",
+        "mrp": "1800",
+        "dp": "850",
+        "status": "publish"
+      },
+      "deliveryAddress": {
+        "id": 0,
+        "addLine1": "Marathalli",
+        "addLine2": "Aswathnagar",
+        "city": "Instanbul",
+        "country": "Turkey",
+        "zipCode": 560037
+      },
+      "contact": "0123456789",
+      "dateTime": "20/03/2021"
+    }
+  ]
+}

@@ -4,6 +4,9 @@ import { RouterModule, Router } from '@angular/router';
 import { LoginSignupService } from '../../shared/services/login-signup.service';
 import { User } from '../../core/models/object-model';
 
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+
 @Component({
   selector: 'app-signin-signup',
   templateUrl: './signin-signup.component.html',
@@ -84,7 +87,7 @@ export class SigninSignupComponent implements OnInit {
         addLine1: this.user_reg_data.addLine1,
         addLine2: this.user_reg_data.addLine2,
         city: this.user_reg_data.city,
-        state: this.user_reg_data.state,
+        country: this.user_reg_data.country,
         zipCode: this.user_reg_data.zipCode,
       },
       language: this.user_reg_data.language,
