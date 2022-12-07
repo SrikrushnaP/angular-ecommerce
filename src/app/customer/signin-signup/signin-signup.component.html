@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 offset-md-3" *ngIf="regForm">
-                <h3>Registeration - Angular 8 Reactive Form With Validation</h3>
+                <h3>Registeration Form..!</h3>
                 <form [formGroup]="signUpform" (ngSubmit)="onSubmitSignUp()">
                     <div class="form-group">
                         <label>Name</label>
@@ -168,7 +168,7 @@
                 <p routerLink="/sign-in" class="sim-pointer">Already have an account click here for login</p>
             </div>
             <div class="col-md-6 offset-md-3" *ngIf="!regForm">
-                <h3>Login - Angular 8 Template Driven Form With Validation</h3>
+                <h3>Please Enter Your Credentails ..!</h3>
                 <form name="form" #tf="ngForm" (ngSubmit)="tf.form.valid && onSubmitSignIn()" novalidate>
                     <div class="form-group">
                         <label>Email</label>
@@ -195,7 +195,8 @@
                         <button class="btn btn-primary">Login</button>
                     </div>
                 </form>
-                <p routerLink="/sign-up" class="sim-pointer">Don't have an account click here for register</p>
+                <p routerLink="/sign-up" class="sim-pointer">Don't have an account click here for register &nbsp;<input type="button" value="REGISTER" class="btn btn-success"></p>
+                
             </div>
         </div>
     </div>
