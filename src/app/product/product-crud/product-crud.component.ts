@@ -32,7 +32,7 @@ export class ProductCrudComponent implements OnInit {
       uploadPhoto: ['', Validators.required],
       productDesc: ['', Validators.required],
       mrp: ['', Validators.required],
-      dp: ['', Validators.required],
+      php: ['', Validators.required],
       status: ['', Validators.required]
     })
     this.getAllProduct()
@@ -67,7 +67,7 @@ export class ProductCrudComponent implements OnInit {
       uploadPhoto: this.product_data.uploadPhoto,
       productDesc: this.product_data.productDesc,
       mrp: this.product_data.mrp,
-      dp: this.product_data.dp,
+      php: this.product_data.php,
       status: this.product_data.status
     }
     this.product_service.addNewProduct(this.product_dto).subscribe(data => {
@@ -94,7 +94,7 @@ export class ProductCrudComponent implements OnInit {
         uploadPhoto: this.single_product_data.uploadPhoto,
         productDesc: this.single_product_data.productDesc,
         mrp: this.single_product_data.mrp,
-        dp: this.single_product_data.dp,
+        php: this.single_product_data.php,
         status: this.single_product_data.status
       })
     })
@@ -113,7 +113,7 @@ export class ProductCrudComponent implements OnInit {
       uploadPhoto: this.product_data.uploadPhoto,
       productDesc: this.product_data.productDesc,
       mrp: this.product_data.mrp,
-      dp: this.product_data.dp,
+      php: this.product_data.php,
       status: this.product_data.status
     }
     this.product_service.updateProduct(this.edit_product_id, this.product_dto).subscribe(data => {

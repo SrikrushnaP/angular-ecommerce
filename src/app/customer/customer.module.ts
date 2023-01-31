@@ -9,7 +9,13 @@ import { CheckoutComponent } from './buyer/checkout/checkout.component';
 import { MyCartComponent } from './buyer/my-cart/my-cart.component';
 
 @NgModule({
-  declarations: [BuyerDashboardComponent, SellerDashboardComponent, SigninSignupComponent, CheckoutComponent, MyCartComponent],
+  declarations: [
+    BuyerDashboardComponent,
+    SellerDashboardComponent,
+    SigninSignupComponent,
+    CheckoutComponent,
+    MyCartComponent
+  ],
   imports: [
     CommonModule,
     FormsModule,

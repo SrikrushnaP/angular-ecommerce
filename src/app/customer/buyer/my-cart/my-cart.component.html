@@ -1,9 +1,18 @@
 <div class="container-sm p-0" style="margin-top: 75px;">
-    <p>my-cart works! <i class="fa-solid fa-cart-shopping"></i></p>
     <div class="row">
         <div class="col-sm-12">
-            Total Price:
-            <p class="float-right"><button class="btn btn-success">Check Out</button></p>
+            <div class="container-fluid border rounded-3 rounded-3 h-100 p-3">
+                <p class="float-right">
+                    Total Price: <strong class="text-info">paybtawsan</strong>
+                    <button class="btn btn-success px-3 ms-3">Check Out</button>
+                </p>
+                <div class="form-check h-100 d-flex align-items-center ms-2">
+                    <input class="form-check-input p-2 border-secondary" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Select All
+                    </label>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row">
@@ -17,11 +26,12 @@
                     <div class="col-md-8">
                         <span class="card-title text-truncate h5">{{product.name}}</span>
                         <span class="float-right">
-                            <input class="form-check-input p-2" type="checkbox" value="" id="flexCheckDefault">
+                            <input class="form-check-input p-2 border-secondary" type="checkbox" value=""
+                                id="flexCheckDefault">
                         </span>
                         <br>
                         <p>{{product.productDesc}}</p>
-                        <p><strong class="text-success">DP</strong>: {{product.dp}}</p>
+                        <p><strong class="text-success">PHP</strong>: {{product.php}}</p>
                         <div class="btn-group" role="group" aria-label="Basic example">
                             <button type="button" class="btn btn-info p-0 px-2 fw-bold"
                                 (click)="decreaseQuantity(product)">-</button>
@@ -29,7 +39,7 @@
                             <button type="button" class="btn btn-info p-0 px-2 fw-bold"
                                 (click)="increaseQuantity(product)">+</button>
                         </div>
-                        <p class="mt-3"><strong>Subtotal:</strong> {{product.dp * product.qty}}</p>
+                        <p class="mt-3"><strong>Subtotal:</strong> {{product.php * product.qty}}</p>
                     </div>
                 </div>
             </div>
@@ -45,12 +55,13 @@
                             <p>{{product.productDesc}}</p>
                             <p>
                                 <span class="float-left"><strong>MRP</strong>: <del>{{product.mrp}}</del></span>
-                                <span class="float-right"><strong>DP</strong>: {{product.dp}}</span>
+                                <span class="float-right"><strong>PHP</strong>: {{product.php}}</span>
                             </p>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-danger" (click)="removeProduct(product)">Remove</button>
+                            <button type="button" class="btn btn-danger"
+                                (click)="removeProduct(product)">Remove</button>
                         </div>
                     </div>
                 </div>

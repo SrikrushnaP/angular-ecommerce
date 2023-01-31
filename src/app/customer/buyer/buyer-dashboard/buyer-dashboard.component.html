@@ -1,10 +1,10 @@
 <div class="container-lg" style="margin-top: 75px;">
-    <nav aria-label="breadcrumb">
+    <!-- <nav aria-label="breadcrumb">
         <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="#">Buyer</a></li>
             <li class="breadcrumb-item"><a routerLink="/buyer-dashboard">Products</a></li>
         </ol>
-    </nav>
+    </nav> -->
     <div class="row">
         <div class="col-sm-12">
             <div class="d-flex" role="search">
@@ -32,7 +32,7 @@
                     <h5 class="card-title text-truncate">{{product.name}}</h5>
                     <p>
                         <span class="float-left"><strong>MRP</strong>: <del>{{product.mrp}}</del></span>
-                        <span class="float-right"><strong>DP</strong>: {{product.dp}}</span>
+                        <span class="float-right"><strong>PHP</strong>: {{product.php}}</span>
                     </p>
                     <br>
                     <p class="card-text product-desc">{{product.productDesc}}</p>
@@ -52,7 +52,7 @@
                             <p class="fs-5">{{product.name}}</p>
                             <p>
                                 <span class="float-left"><strong>MRP</strong>: <del>{{product.mrp}}</del></span>
-                                <span class="float-right"><strong>DP</strong>: {{product.dp}}</span>
+                                <span class="float-right"><strong>PHP</strong>: {{product.php}}</span>
                             </p>
                         </div>
                         <div class="modal-footer">

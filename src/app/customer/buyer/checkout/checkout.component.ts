@@ -56,7 +56,7 @@ export class CheckoutComponent implements OnInit {
         uploadPhoto: this.individual_product.uploadPhoto,
         productDesc: this.individual_product.productDesc,
         mrp: this.individual_product.mrp,
-        dp: this.individual_product.dp,
+        php: this.individual_product.php,
         status: this.individual_product.status
       },
       deliveryAddress: {
