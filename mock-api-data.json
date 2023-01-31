@@ -27,24 +27,24 @@
     },
     {
       "aboutYou": "I am programmer",
-      "age": 25,
+      "age": 27,
       "agreetc": true,
-      "dob": "2019-12-31",
+      "dob": "2023-01-01",
       "email": "seller@gmail.com",
       "gender": "Male",
       "address": {
         "id": 0,
-        "addLine1": "Marathalli",
-        "addLine2": "Aswathnagar",
-        "city": "Bangalore",
-        "state": "Choose...",
-        "zipCode": "560037"
+        "addLine1": "qwe",
+        "addLine2": "asd",
+        "city": "Lumipad",
+        "state": "Ang aming team",
+        "zipCode": "3015"
       },
       "language": [
-        "Oriya/Odiya"
+        "Tagalog/English"
       ],
       "mobNumber": "0123456789",
-      "name": "Bijay",
+      "name": "Rowell Esguerra",
       "password": "123456",
       "uploadPhoto": "C:\\fakepath\\Online Application.pdf",
       "role": "seller",
@@ -75,120 +75,444 @@
   "products": [
     {
       "id": 1,
-      "name": "Polyester Door Curtain",
-      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jcf487k0/curtain/w/e/y/elegant-cream-door-curtains-set-of-2-213-soe-fsb-120-120-eyelet-original-imaffk7f9wng4v4m.jpeg",
-      "productDesc": "Transform the ambiance of your home with these elegant, crushed texture, light weight, solid color curtains. These curtains are available in several colors and sizes to match to your home decor and the gracefully flowing polyester is durable and machine washable for your convenience.",
-      "mrp": "1000",
-      "dp": "499",
+      "name": "Studded Buckle Sandals",
+      "uploadPhoto": "https://i.pinimg.com/564x/fa/c7/83/fac783bc652d823f39f33dbee13915f9.jpg",
+      "productDesc": "Sandals",
+      "mrp": "300",
+      "dp": "200",
       "status": "publish"
     },
     {
       "id": 2,
-      "name": "Water Bottle",
-      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/bottle/w/5/g/1000-cello-h2o-cello-h2o-water-bottel-cello-original-imaeqtj3vyxyehmn.jpeg",
-      "productDesc": "Hygienic bottle: The bottle is made of 100% food grade material & is BPA free ensures a safe drinking. Crystal Clarity: It's sheer body helps to easily identify the contents & also adds beauty to the liquid that you put in, Leak Proof: The bottle has a liquid tight cap that prevents leakage & is unbreakable. Freezer safe: These bottles are compatible with refrigerator & not being curvy the bottle occupies less space. Looks pretty in the fridge or on the table top.",
-      "mrp": "123",
-      "dp": "99",
+      "name": "Lace-Up Snickers",
+      "uploadPhoto": "https://i.pinimg.com/564x/03/5e/81/035e81c8f2510c5f898f368815557257.jpg",
+      "productDesc": "Snickers",
+      "mrp": "1300",
+      "dp": "1250",
       "status": "publish"
     },
     {
       "id": 3,
-      "name": "Metro Living Self Design Pillows Cover",
-      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jjsw4nk0/cushion-pillow-cover/e/z/z/epl12-metro-living-original-imaf7ah6zstjyevd.jpeg",
-      "productDesc": "Regional Speciality\nRajasthan\nFabric Care\nMachinne Wash, Do not Bleach, Wash in Cold Water\nThread Count\n104\nSales Package\nPack of 2 Pillow Cover",
-      "mrp": "500",
-      "dp": "399",
-      "status": "draft"
+      "name": "Plaited Sandals",
+      "uploadPhoto": "https://i.pinimg.com/564x/74/5e/c1/745ec13df44885f002ebb42003a175c4.jpg",
+      "productDesc": "Sandals",
+      "mrp": "350",
+      "dp": "300",
+      "status": "publish"
     },
     {
       "id": 4,
-      "name": "Metro Living Self Design Pillows Cover",
-      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jjsw4nk0/cushion-pillow-cover/e/z/z/epl12-metro-living-original-imaf7ah6zstjyevd.jpeg",
-      "productDesc": "Regional Speciality\nRajasthan\nFabric Care\nMachinne Wash, Do not Bleach, Wash in Cold Water\nThread Count\n104\nSales Package\nPack of 2 Pillow Cover",
-      "mrp": "500",
-      "dp": "399",
-      "status": "draft"
+      "name": "Dalia Boots",
+      "uploadPhoto": "https://i.pinimg.com/564x/cf/15/cf/cf15cf66116e92c11d721cd09b295cca.jpg",
+      "productDesc": "Boots",
+      "mrp": "1600",
+      "dp": "1500",
+      "status": "publish"
     },
     {
       "id": 5,
-      "name": "TIZUM Aluminium Portable Stand",
-      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jx0prbk0/mobile-holder/t/3/d/aluminium-portable-stand-with-convenient-charging-port-design-original-imafhkkxjvphhhgz.jpeg",
-      "productDesc": "The aluminium material used in the stand makes it sturdy and strong. Multi-angle fold-ability provides with a seamless viewing experience. The light weight of this stand allows it to be carried around everywhere conveniently. Universally designed to fit 3.5-8 inch phones and tablets without hassle. Apart from phones and tabs, the stand also holds gaming console like Nintendo play. •Aluminium Stand with Multi-Angle foldability ",
-      "mrp": "300",
-      "dp": "199",
-      "status": "inactive"
+      "name": "Classic Nude Heels",
+      "uploadPhoto": "https://i.pinimg.com/564x/00/3f/0f/003f0ffc95dcf73256bff15c61dbf674.jpg",
+      "productDesc": "Heels",
+      "mrp": "1000",
+      "dp": "900",
+      "status": "publish"
     },
     {
       "id": 6,
-      "name": "Polyester Door Curtain",
-      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jcf487k0/curtain/w/e/y/elegant-cream-door-curtains-set-of-2-213-soe-fsb-120-120-eyelet-original-imaffk7f9wng4v4m.jpeg",
-      "productDesc": "Transform the ambiance of your home with these elegant, crushed texture, light weight, solid color curtains. These curtains are available in several colors and sizes to match to your home decor and the gracefully flowing polyester is durable and machine washable for your convenience.",
-      "mrp": "1000",
-      "dp": "499",
+      "name": "Urban Snickers",
+      "uploadPhoto": "https://i.pinimg.com/564x/30/5f/30/305f305394ad4a74f59740062f39ff0d.jpg",
+      "productDesc": "Snickers",
+      "mrp": "1250",
+      "dp": "1200",
       "status": "publish"
     },
     {
       "id": 7,
-      "name": "Water Bottle",
-      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/bottle/w/5/g/1000-cello-h2o-cello-h2o-water-bottel-cello-original-imaeqtj3vyxyehmn.jpeg",
-      "productDesc": "Hygienic bottle: The bottle is made of 100% food grade material & is BPA free ensures a safe drinking. Crystal Clarity: It's sheer body helps to easily identify the contents & also adds beauty to the liquid that you put in, Leak Proof: The bottle has a liquid tight cap that prevents leakage & is unbreakable. Freezer safe: These bottles are compatible with refrigerator & not being curvy the bottle occupies less space. Looks pretty in the fridge or on the table top.",
-      "mrp": "123",
-      "dp": "99",
+      "name": "Raffles Sandals",
+      "uploadPhoto": "https://i.pinimg.com/564x/18/88/d7/1888d7eb0de7f9bae07dc8d6fff42621.jpg",
+      "productDesc": "Sandals",
+      "mrp": "300",
+      "dp": "250",
       "status": "publish"
     },
     {
       "id": 8,
-      "name": "Metro Living Self Design Pillows Cover",
-      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jjsw4nk0/cushion-pillow-cover/e/z/z/epl12-metro-living-original-imaf7ah6zstjyevd.jpeg",
-      "productDesc": "Regional Speciality\nRajasthan\nFabric Care\nMachinne Wash, Do not Bleach, Wash in Cold Water\nThread Count\n104\nSales Package\nPack of 2 Pillow Cover",
-      "mrp": "500",
-      "dp": "399",
-      "status": "draft"
+      "name": "Natalia Spear Boots",
+      "uploadPhoto": "https://i.pinimg.com/564x/c5/97/b3/c597b31772275a786c6fc3eb3b56abdf.jpg",
+      "productDesc": "Boots",
+      "mrp": "2200",
+      "dp": "2000",
+      "status": "publish"
     },
     {
       "id": 9,
-      "name": "TIZUM Aluminium Portable Stand",
-      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jx0prbk0/mobile-holder/t/3/d/aluminium-portable-stand-with-convenient-charging-port-design-original-imafhkkxjvphhhgz.jpeg",
-      "productDesc": "The aluminium material used in the stand makes it sturdy and strong. Multi-angle fold-ability provides with a seamless viewing experience. The light weight of this stand allows it to be carried around everywhere conveniently. Universally designed to fit 3.5-8 inch phones and tablets without hassle. Apart from phones and tabs, the stand also holds gaming console like Nintendo play. •Aluminium Stand with Multi-Angle foldability ",
-      "mrp": "300",
-      "dp": "199",
-      "status": "inactive"
+      "name": "Leatherette Pointed Heels",
+      "uploadPhoto": "https://i.pinimg.com/564x/c0/3f/d8/c03fd875dde20647da395a15d7211a3c.jpg",
+      "productDesc": "Heels",
+      "mrp": "1500",
+      "dp": "1400",
+      "status": "publish"
     },
     {
       "id": 10,
-      "name": "Polyester Door Curtain",
-      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jcf487k0/curtain/w/e/y/elegant-cream-door-curtains-set-of-2-213-soe-fsb-120-120-eyelet-original-imaffk7f9wng4v4m.jpeg",
-      "productDesc": "Transform the ambiance of your home with these elegant, crushed texture, light weight, solid color curtains. These curtains are available in several colors and sizes to match to your home decor and the gracefully flowing polyester is durable and machine washable for your convenience.",
-      "mrp": "1000",
-      "dp": "499",
+      "name": "Skate Snickers",
+      "uploadPhoto": "https://i.pinimg.com/564x/ee/0b/ed/ee0bed176de6772cd87169373825733b.jpg",
+      "productDesc": "Snickers",
+      "mrp": "1300",
+      "dp": "1250",
       "status": "publish"
     },
     {
       "id": 11,
-      "name": "Water Bottle",
-      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/bottle/w/5/g/1000-cello-h2o-cello-h2o-water-bottel-cello-original-imaeqtj3vyxyehmn.jpeg",
-      "productDesc": "Hygienic bottle: The bottle is made of 100% food grade material & is BPA free ensures a safe drinking. Crystal Clarity: It's sheer body helps to easily identify the contents & also adds beauty to the liquid that you put in, Leak Proof: The bottle has a liquid tight cap that prevents leakage & is unbreakable. Freezer safe: These bottles are compatible with refrigerator & not being curvy the bottle occupies less space. Looks pretty in the fridge or on the table top.",
-      "mrp": "123",
-      "dp": "99",
+      "name": "Barcelona Snickers",
+      "uploadPhoto": "https://i.pinimg.com/564x/4a/b3/f2/4ab3f2c7a446f8c3c2b5b0ce7ec6b967.jpg",
+      "productDesc": "Snickers",
+      "mrp": "1400",
+      "dp": "1300",
       "status": "publish"
     },
     {
       "id": 12,
-      "name": "Metro Living Self Design Pillows Cover",
-      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jjsw4nk0/cushion-pillow-cover/e/z/z/epl12-metro-living-original-imaf7ah6zstjyevd.jpeg",
-      "productDesc": "Regional Speciality\nRajasthan\nFabric Care\nMachinne Wash, Do not Bleach, Wash in Cold Water\nThread Count\n104\nSales Package\nPack of 2 Pillow Cover",
-      "mrp": "500",
-      "dp": "399",
-      "status": "draft"
+      "name": "Glittery Low Cut Boots",
+      "uploadPhoto": "https://i.pinimg.com/564x/ba/af/7f/baaf7fb70281f4a67dd69a2261a505a0.jpg",
+      "productDesc": "Boots",
+      "mrp": "1700",
+      "dp": "1600",
+      "status": "publish"
     },
     {
       "id": 13,
-      "name": "TIZUM Aluminium Portable Stand",
-      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/jx0prbk0/mobile-holder/t/3/d/aluminium-portable-stand-with-convenient-charging-port-design-original-imafhkkxjvphhhgz.jpeg",
-      "productDesc": "The aluminium material used in the stand makes it sturdy and strong. Multi-angle fold-ability provides with a seamless viewing experience. The light weight of this stand allows it to be carried around everywhere conveniently. Universally designed to fit 3.5-8 inch phones and tablets without hassle. Apart from phones and tabs, the stand also holds gaming console like Nintendo play. •Aluminium Stand with Multi-Angle foldability ",
-      "mrp": "300",
-      "dp": "199",
-      "status": "inactive"
+      "name": "Winter Heels",
+      "uploadPhoto": "https://i.pinimg.com/564x/d5/47/1f/d5471f60246507d2d1ba4b2e000b95b1.jpg",
+      "productDesc": "Heels",
+      "mrp": "1700",
+      "dp": "1600",
+      "status": "publish"
+    },
+    {
+      "id": 14,
+      "name": "Black Running Shoes",
+      "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/l572ufk0/shoe/e/m/m/10-crystal-09cblack-10-asian-black-original-imagfxh8yg467jf9.jpeg?q=70",
+      "productDesc": "Cool and Nice ",
+      "mrp": "999",
+      "dp": "500",
+      "status": "publish"
+    },
+    {
+      "id": 15,
+      "name": "Breathable Running Shoes",
+      "uploadPhoto": "https://ae01.alicdn.com/kf/Sd2b232811c314e6386e5876107a7167cx/Red-Men-s-Casual-Sneakers-Breathable-Sports-Running-Shoes-Soft-Lightweight-Mesh-Shose-Comfortable-Antiskid-Men.jpg_640x640.jpg",
+      "productDesc": "Casual Shoes",
+      "mrp": "1199",
+      "dp": "600",
+      "status": "publish"
+    },
+    {
+      "id": 16,
+      "name": "Spongebob BasketBall Shoes",
+      "uploadPhoto": "https://image.made-in-china.com/202f0j00YFBhuKsqyZoM/Cheap-Custom-Logo-Sport-Women-prime-S-Chinese-Outdoor-Basketball-Shoes-Men.jpg",
+      "productDesc": "Sports Shoes",
+      "mrp": "1999",
+      "dp": "1000",
+      "status": "publish"
+    },
+    {
+      "id": 17,
+      "name": "Light Basketball Sneakers",
+      "uploadPhoto": "https://ae01.alicdn.com/kf/Sf33834a09933477bb7ae048e05078f6di/Men-Training-High-top-Basketball-Shoes-Men-s-Cushioning-Light-Basketball-Sneakers-designer-shoes-Breathable-Outdoor.jpeg_Q90.jpeg_.webp",
+      "productDesc": "Sports Shoes",
+      "mrp": "1299",
+      "dp": "1500",
+      "status": "publish"
+    },
+    {
+      "id": 18,
+      "name": "Gold Basket Ball Shoes",
+      "uploadPhoto": "https://i.ebayimg.com/thumbs/images/g/ZQIAAOSw2xBhsCWW/s-l300.jpg",
+      "productDesc": "Sports Shoes",
+      "mrp": "3999",
+      "dp": "2000",
+      "status": "publish"
+    },
+    {
+      "id": 19,
+      "name": "Black Boots",
+      "uploadPhoto": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-mens-black-boots-header-1620143368.jpg?crop=0.497xw:0.994xh;0.503xw,0&resize=640:*",
+      "productDesc": "Boots",
+      "mrp": "1999",
+      "dp": "600",
+      "status": "publish"
+    },
+    {
+      "id": 20,
+      "name": "Chelsea Boots",
+      "uploadPhoto": "https://luxurylondon.co.uk/wp-content/uploads/2022/09/the-best-chelsea-boots-for-men-1465x1099-c-center.jpg",
+      "productDesc": "Boots",
+      "mrp": "3000",
+      "dp": "1500",
+      "status": "publish"
+    },
+    {
+      "id": 21,
+      "name": "Waterproof Boots",
+      "uploadPhoto": "https://images.timberland.com/is/image/timberland/A2DVV201-ALT4?wid=500&hei=500",
+      "productDesc": "Boots",
+      "mrp": "4000",
+      "dp": "2000",
+      "status": "publish"
+    },
+    {
+      "id": 22,
+      "name": "Summer Mat Sandals",
+      "uploadPhoto": "https://i.pinimg.com/564x/35/93/dc/3593dc2aeb4d10b0c27ef6e02ee25e5c.jpg",
+      "productDesc": "Sandals",
+      "mrp": "250",
+      "dp": "200",
+      "status": "publish"
+    },
+    {
+      "id": 23,
+      "name": "Axel Snickers",
+      "uploadPhoto": "https://i.pinimg.com/564x/8d/20/57/8d20577683afdea242330f085c9d782b.jpg",
+      "productDesc": "Snickers",
+      "mrp": "1500",
+      "dp": "1200",
+      "status": "publish"
+    },
+    {
+      "id": 24,
+      "name": "Denim Pointed Boots",
+      "uploadPhoto": "https://i.pinimg.com/564x/87/df/c6/87dfc6613e45f6b25f7d64dc2f950321.jpg",
+      "productDesc": "Boots",
+      "mrp": "2000",
+      "dp": "1800",
+      "status": "publish"
+    },
+    {
+      "id": 25,
+      "name": "Glittery Stiletto Heels",
+      "uploadPhoto": "https://i.pinimg.com/564x/64/d9/99/64d9994db144bf86b924b12bbcbb7fd6.jpg",
+      "productDesc": "Heels",
+      "mrp": "1300",
+      "dp": "1200",
+      "status": "publish"
+    },
+    {
+      "id": 26,
+      "name": "Studded Buckle Sandals",
+      "uploadPhoto": "https://i.pinimg.com/564x/fa/c7/83/fac783bc652d823f39f33dbee13915f9.jpg",
+      "productDesc": "Sandals",
+      "mrp": "250",
+      "dp": "200",
+      "status": "publish"
+    },
+    {
+      "id": 27,
+      "name": "SnakeSkin Snickers",
+      "uploadPhoto": "https://i.pinimg.com/564x/2b/f3/5f/2bf35f1c7f750444b7ea92d1e92741f9.jpg",
+      "productDesc": "Snickers",
+      "mrp": "1600",
+      "dp": "1500",
+      "status": "publish"
+    },
+    {
+      "id": 28,
+      "name": "Plain Mid Cut Boots",
+      "uploadPhoto": "https://i.pinimg.com/564x/5c/2a/24/5c2a244c2c87720e15f21e819c544fdf.jpg",
+      "productDesc": "Boots",
+      "mrp": "1600",
+      "dp": "1500",
+      "status": "publish"
+    },
+    {
+      "id": 29,
+      "name": "Zanotti Strap Heels",
+      "uploadPhoto": "https://i.pinimg.com/564x/72/38/b8/7238b852a1b5e33f84546e716cb9c9ae.jpg",
+      "productDesc": "Heels",
+      "mrp": "1100",
+      "dp": "1000",
+      "status": "publish"
+    },
+    {
+      "id": 30,
+      "name": "Classic Pearl Heels",
+      "uploadPhoto": "https://i.pinimg.com/564x/90/c4/36/90c4365dbfb9734729e7cf68d79046ac.jpg",
+      "productDesc": "Heels",
+      "mrp": "1350",
+      "dp": "1250",
+      "status": "publish"
+    },
+    {
+      "id": 31,
+      "name": "Patent Leather Wallet Boots",
+      "uploadPhoto": "https://i.pinimg.com/564x/c4/96/8b/c4968bee50ba80145d813044b89d8ce5.jpg",
+      "productDesc": "Boots",
+      "mrp": "2500",
+      "dp": "2200",
+      "status": "publish"
+    },
+    {
+      "id": 32,
+      "name": "Twirly Scarf Snickers",
+      "uploadPhoto": "https://i.pinimg.com/564x/3e/cf/56/3ecf56caaab67d0f5055c4c76304a931.jpg",
+      "productDesc": "Snickers",
+      "mrp": "2000",
+      "dp": "1800",
+      "status": "publish"
+    },
+    {
+      "id": 33,
+      "name": "Fringe Sandals",
+      "uploadPhoto": "https://i.pinimg.com/564x/cb/1b/56/cb1b5631546236a7196e522a65dd4bbf.jpg",
+      "productDesc": "Sandals",
+      "mrp": "400",
+      "dp": "350",
+      "status": "publish"
+    },
+    {
+      "id": 34,
+      "name": "Lily Feather Heels",
+      "uploadPhoto": "https://i.pinimg.com/564x/8f/7e/a2/8f7ea27a119bd1e33565ca63d60ba7de.jpg",
+      "productDesc": "Heels",
+      "mrp": "1000",
+      "dp": "900",
+      "status": "publish"
+    },
+    {
+      "id": 35,
+      "name": "Raluca Boots",
+      "uploadPhoto": "https://i.pinimg.com/564x/a7/7c/66/a77c669ecc504e2455940b388ce9e844.jpg",
+      "productDesc": "Boots",
+      "mrp": "3200",
+      "dp": "3000",
+      "status": "publish"
+    },
+    {
+      "id": 36,
+      "name": "Black Sandals",
+      "uploadPhoto": "https://static-ph.zacdn.com/p/birkenstock-9503-651925-2.jpg",
+      "productDesc": "Sandals",
+      "mrp": "899",
+      "dp": "400",
+      "status": "publish"
+    },
+    {
+      "id": 37,
+      "name": "Brown Leather Sandals ",
+      "uploadPhoto": "https://5.imimg.com/data5/SELLER/Default/2021/6/PK/QZ/XQ/8852934/-mg-5078-500x500.JPG",
+      "productDesc": "Sandals",
+      "mrp": "1199",
+      "dp": "600",
+      "status": "publish"
+    },
+    {
+      "id": 38,
+      "name": "Casual Leather Sandals ",
+      "uploadPhoto": "https://5.imimg.com/data5/JJ/KG/MM/SELLER-56197312/mens-casual-leather-sandals-500x500.jpg",
+      "productDesc": "Sandals",
+      "mrp": "3000",
+      "dp": "1500",
+      "status": "publish"
+    },
+    {
+      "id": 39,
+      "name": "Claus Trainer Sneaker ",
+      "uploadPhoto": "https://i.pinimg.com/564x/35/16/1f/35161fc015ee2ea9cf00a7617680d230.jpg",
+      "productDesc": "Sneakers",
+      "mrp": "3000",
+      "dp": "1500",
+      "status": "publish"
+    },
+    {
+      "id": 40,
+      "name": "Lace-Up Sneaker",
+      "uploadPhoto": "https://i.pinimg.com/564x/c3/0c/be/c30cbefb4aaf2c8e6ce1130fad5b2aad.jpg",
+      "productDesc": "Sneakers",
+      "mrp": "2000",
+      "dp": "1000",
+      "status": "publish"
+    },
+    {
+      "id": 41,
+      "name": "White Sneaker",
+      "uploadPhoto": "https://i.pinimg.com/564x/44/45/97/4445979fd91cd31515050fcd27cd324b.jpg",
+      "productDesc": "Sneakers",
+      "mrp": "3500",
+      "dp": "1500",
+      "status": "publish"
+    },
+    {
+      "id": 42,
+      "name": "Leather Vintage Boots",
+      "uploadPhoto": "https://i.pinimg.com/564x/85/58/39/855839abe3bef49149054fe43db28c43.jpg",
+      "productDesc": "Boots",
+      "mrp": "2500",
+      "dp": "1200",
+      "status": "publish"
+    },
+    {
+      "id": 43,
+      "name": "Chelsea Black Boots",
+      "uploadPhoto": "https://i.pinimg.com/564x/24/04/ff/2404ff95a53e0ae17361d16fb1bb91e4.jpg",
+      "productDesc": "Boots",
+      "mrp": "2999",
+      "dp": "1500",
+      "status": "publish"
+    },
+    {
+      "id": 44,
+      "name": "Lace-Up Derby Black Shoes",
+      "uploadPhoto": "https://i.pinimg.com/564x/91/62/c3/9162c3f969f22973ab79399622cc1e60.jpg",
+      "productDesc": "Black Shoes",
+      "mrp": "999",
+      "dp": "500",
+      "status": "publish"
+    },
+    {
+      "id": 45,
+      "name": "Lace-Up Leather",
+      "uploadPhoto": "https://i.pinimg.com/564x/9c/72/a0/9c72a0abc875c86be602ffc625a68a1d.jpg",
+      "productDesc": "Black Shoes",
+      "mrp": "800",
+      "dp": "400",
+      "status": "publish"
+    },
+    {
+      "id": 46,
+      "name": "Loafer Leather",
+      "uploadPhoto": "https://i.pinimg.com/564x/9c/72/a0/9c72a0abc875c86be602ffc625a68a1d.jpg",
+      "productDesc": "Black Shoes",
+      "mrp": "500",
+      "dp": "250",
+      "status": "publish"
+    },
+    {
+      "id": 47,
+      "name": "Leather Pointed Toe",
+      "uploadPhoto": "https://i.pinimg.com/564x/57/50/00/5750000911e5470a5a88d596be8fbc7b.jpg",
+      "productDesc": "Black Shoes",
+      "mrp": "999",
+      "dp": "500",
+      "status": "publish"
+    },
+    {
+      "id": 48,
+      "name": "Lace-Up Pointed Toe",
+      "uploadPhoto": "https://i.pinimg.com/564x/57/50/00/5750000911e5470a5a88d596be8fbc7b.jpg",
+      "productDesc": "Black Shoes",
+      "mrp": "1300",
+      "dp": "650",
+      "status": "publish"
+    },
+    {
+      "id": 49,
+      "name": "Tuxedo Black",
+      "uploadPhoto": "https://i.pinimg.com/564x/e6/bc/b6/e6bcb6a4f0a25e6293b6bbccace34ef7.jpg",
+      "productDesc": "Black Shoes",
+      "mrp": "1999",
+      "dp": "1000",
+      "status": "publish"
     }
   ],
   "orders": [
@@ -239,6 +563,79 @@
       },
       "contact": "09040398006",
       "dateTime": "30/08/2019"
+    },
+    {
+      "id": 3,
+      "userId": 3,
+      "sellerId": 2,
+      "product": {
+        "id": 2,
+        "name": "Water Bottle",
+        "uploadPhoto": "https://rukminim1.flixcart.com/image/832/832/bottle/w/5/g/1000-cello-h2o-cello-h2o-water-bottel-cello-original-imaeqtj3vyxyehmn.jpeg",
+        "productDesc": "Hygienic bottle: The bottle is made of 100% food grade material & is BPA free ensures a safe drinking. Crystal Clarity: It's sheer body helps to easily identify the contents & also adds beauty to the liquid that you put in, Leak Proof: The bottle has a liquid tight cap that prevents leakage & is unbreakable. Freezer safe: These bottles are compatible with refrigerator & not being curvy the bottle occupies less space. Looks pretty in the fridge or on the table top.",
+        "mrp": "123",
+        "dp": "99",
+        "status": "publish"
+      },
+      "deliveryAddress": {
+        "id": 0,
+        "addLine1": "Marathalli",
+        "addLine2": "Aswathnagar",
+        "city": "Bangalore",
+        "state": "Choose...",
+        "zipCode": 560037
+      },
+      "contact": "0123456789",
+      "dateTime": "1/25/2023"
+    }
+  ],
+  "members": [
+    {
+      "name": "Kathalie Arrogante",
+      "image": "../../assets/images/kathalie.jpg",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus consequat tellus, sed vulputate ante suscipit ac. Phasellus ac rhoncus.",
+      "facebook": "https://www.facebook.com/kathalie.viceralarrogante?mibextid=LQQJ4d",
+      "github": ""
+    },
+    {
+      "name": "Jade Ballester",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus consequat tellus, sed vulputate ante suscipit ac. Phasellus ac rhoncus.",
+      "image": "../../assets/images/jade.jpg",
+      "facebook": "https://www.facebook.com/Jadiilester18?mibextid=LQQJ4d",
+      "github": ""
+    },
+    {
+      "name": "Rowell Esguerra",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus consequat tellus, sed vulputate ante suscipit ac. Phasellus ac rhoncus.",
+      "image": "../../assets/images/rowell.jpg",
+      "facebook": "https://www.facebook.com/CJFC06?mibextid=LQQJ4d",
+      "github": ""
+    },
+    {
+      "name": "Jonna Mae Mayang",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus consequat tellus, sed vulputate ante suscipit ac. Phasellus ac rhoncus.",
+      "image": "../../assets/images/jonna.jpg",
+      "facebook": "https://www.facebook.com/Buendia.Naanoj.7?mibextid=LQQJ4d",
+      "github": ""
+    },
+    {
+      "name": "Daryl Victa",
+      "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus consequat tellus, sed vulputate ante suscipit ac. Phasellus ac rhoncus.",
+      "image": "../../assets/images/daryl.jpg",
+      "facebook": "https://www.facebook.com/its.fukuda?mibextid=LQQJ4d",
+      "github": ""
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "name": "Studded Buckle Sandals",
+      "uploadPhoto": "https://i.pinimg.com/564x/fa/c7/83/fac783bc652d823f39f33dbee13915f9.jpg",
+      "productDesc": "Sandals",
+      "mrp": "300",
+      "dp": "200",
+      "status": "publish",
+      "qty": 1
     }
   ]
 }

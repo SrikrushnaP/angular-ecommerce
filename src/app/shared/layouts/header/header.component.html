@@ -1,72 +1,88 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">{{'header.ecommerce' | translate}}</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    {{language}}
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" (click)="switchLanguage('en')">{{'header.lang_en' | translate}}</a>
-                    <a class="dropdown-item" (click)="switchLanguage('hn')">{{'header.lang_hn' | translate}}</a>
-                </div>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#">{{'header.home' | translate}} <span class="sr-only">(current)</span></a>
-            </li>
-            <!-- <li class="nav-item">
-                <a class="nav-link" href="#">{{'header.service' | translate}}</a>
-            </li> -->
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">
-                    {{'header.about_us' | translate}}
-                </a>
-            </li>
-            
-            <li class="nav-item" *ngIf="user_role == 'buyer'">
+<nav class="navbar navbar-light navbar-expand-lg bg-body-tertiary bg-transparent">
+    <div class="container-lg">
+        <button class="navbar-toggler me-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <span class="navbar-brand mb-0 h1">
+            <img id="_logo" src="../../../../assets/thumbnails/logo.png" alt="">
+        </span>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item dropdown my-2">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        {{language}}
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" (click)="switchLanguage('en')">{{'header.lang_en' |
+                                translate}}</a></li>
+                        <li><a class="dropdown-item" (click)="switchLanguage('hn')">{{'header.lang_hn' |
+                                translate}}</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item  my-2">
+                    <a class="nav-link" routerLink="">{{'header.home'
+                        | translate}} <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item my-2">
+                    <a class="nav-link" routerLink="/about-us">{{'header.about_us' | translate}}</a>
+                </li>
+                <li class="nav-item my-2" *ngIf="user_role == 'buyer'">
+                    <a class="nav-link" routerLink="/buyer-dashboard">{{'header.product' | translate}}</a>
+                </li>
+                <li class="nav-item my-2" *ngIf="user_role == 'buyer'">
                     <a class="nav-link" routerLink="/my-order">{{'header.order' | translate}}</a>
-            </li>
-            <li class="nav-item" *ngIf="user_role == 'admin'">
+                </li>
+                <li class="nav-item my-2" *ngIf="user_role == 'admin'">
                     <a class="nav-link" routerLink="/all-order">{{'header.order' | translate}}</a>
-            </li>
-            <li class="nav-item" *ngIf="user_role == 'seller'">
+                </li>
+                <li class="nav-item my-2" *ngIf="user_role == 'seller'">
                     <a class="nav-link" routerLink="/seller/product">{{'header.product' | translate}}</a>
-            </li>
-            <li class="nav-item" *ngIf="user_role == 'admin'">
+                </li>
+                <li class="nav-item my-2" *ngIf="user_role == 'admin'">
                     <a class="nav-link" routerLink="/admin/product">{{'header.product' | translate}}</a>
-            </li>
-            <li class="nav-item" *ngIf="user_role == 'admin'">
+                </li>
+                <li class="nav-item my-2" *ngIf="user_role == 'user'">
                     <a class="nav-link" routerLink="/admin/user">{{'header.user' | translate}}</a>
-            </li>
-            <li class="nav-item">
+                </li>
+                <li class="nav-item my-2">
                     <a class="nav-link" routerLink="/contact-us">{{'header.contact_us' | translate}}</a>
-            </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="{{'header.search' | translate}}" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">{{'header.search' | translate}}</button>
-        </form>
-        <ul class="navbar-nav ml-auto" *ngIf="!logged_in">
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/sign-in">{{'header.signin' | translate}}</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" routerLink="/sign-up">{{'header.signup' | translate}}</a>
-            </li>
-        </ul>
-        <ul class="navbar-nav ml-auto" *ngIf="logged_in">
-            <li class="nav-item">
-                <a class="nav-link sim-pointer" routerLink="/my-profile">{{'header.my_profile' | translate}}</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link sim-pointer" (click)="logOut()">{{'header.signout' | translate}}</a>
-            </li>
-        </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <a class="btn btn-transparent" id="_cart" routerLink="/my-cart" *ngIf="user_role == 'buyer'">
+                <i class="fa-solid fa-cart-shopping fa-lg"></i>
+            </a>
+            <button type="button" class="btn btn-transparent dropdown-toggle" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="fa-solid fa-user fa-lg"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" *ngIf="!logged_in">
+                <li>
+                    <a class="dropdown-item" type="button" routerLink="/sign-in">
+                        <i class="fa-solid fa-user-check me-3"></i>{{'header.signin' | translate}}
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-item" type="button" routerLink="/sign-up">
+                        <i class="fa-solid fa-user-plus me-3"></i>{{'header.signup' | translate}}
+                    </a>
+                </li>
+            </ul>
+            <ul class="dropdown-menu dropdown-menu-end" *ngIf="logged_in">
+                <li>
+                    <a class="dropdown-item" type="button" routerLink="/my-profile">
+                        <i class="fa-solid fa-user-pen me-3"></i>{{'header.my_profile' | translate}}
+                    </a>
+                </li>
+                <li>
+                    <button class="dropdown-item" type="button" (click)="logOut()">
+                        <i class="fa-solid fa-right-from-bracket me-3"></i>{{'header.signout' | translate}}
+                    </button>
+                </li>
+            </ul>
+        </div>
     </div>
 </nav>

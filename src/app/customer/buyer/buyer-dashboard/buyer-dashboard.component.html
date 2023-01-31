@@ -1,22 +1,65 @@
-<br>
-<nav aria-label="breadcrumb">
-    <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="#">Buyer</a></li>
-        <li class="breadcrumb-item"><a routerLink="/buyer-dashboard">Products</a></li>
-    </ol>
-</nav>
-<div class="row">
-    <div class="col-sm-4 product" *ngFor="let product of all_products;">
-        <div class="card">
-            <img src="{{product.uploadPhoto}}" class="card-img-top" alt="{{product.name}}">
-            <div class="card-body">
-                <h4 class="card-title">{{product.name}}</h4>
-                <p><span class="float-left"><strong>MRP</strong>: <del>{{product.mrp}}</del></span> <span class="float-right"><strong>DP</strong>:
-                        {{product.dp}}</span></p>
-                <br>
-                <p class="card-text product-desc">{{product.productDesc}}</p>
-                <a class="btn btn-primary float-left" (click)="addToCart()">Add to Cart</a>
-                <a class="btn btn-primary float-right" (click)="buyProduct(product.id)">Buy Now</a>
+<div class="container-lg" style="margin-top: 75px;">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Buyer</a></li>
+            <li class="breadcrumb-item"><a routerLink="/buyer-dashboard">Products</a></li>
+        </ol>
+    </nav>
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="d-flex" role="search">
+                <div class="input-group">
+                    <input type="text" (keyup)="searchProducts()" class="form-control bg-transparent rounded-start-3"
+                        id="_search" [(ngModel)]="searchText" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-info dropdown-toggle px-4 rounded-end-3" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Categories<i class="fa-solid fa-tags ms-2"></i>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li *ngFor="let category of product_categories"><a class="dropdown-item" style="cursor: pointer;" (click)="filterProducts(category)">{{category}}</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <button class="btn btn-outline-secondary mt-2" (click)="getAllProduct()" *ngIf="buttonVisible">Clear filters<i class="fa-regular fa-circle-xmark ms-2"></i></button>
+        </div>
+        <div class="col-sm-4 p-3" *ngFor="let product of searched_products">
+            <div class="card p-4 rounded-3">
+                <img src="{{product.uploadPhoto}}" class="card-img-top mx-auto d-block rounded-3 bg-light"
+                    alt="{{product.name}}">
+                <div class="card-body p-0 mt-4">
+                    <h5 class="card-title text-truncate">{{product.name}}</h5>
+                    <p>
+                        <span class="float-left"><strong>MRP</strong>: <del>{{product.mrp}}</del></span>
+                        <span class="float-right"><strong>DP</strong>: {{product.dp}}</span>
+                    </p>
+                    <br>
+                    <p class="card-text product-desc">{{product.productDesc}}</p>
+                    <a class="btn btn-success text-light float-right ms-2" (click)="buyProduct(product.id)">Buy Now</a>
+                    <a class="btn btn-primary text-light float-right" (click)="addToCart(product)">Add to Cart</a>
+                </div>
+            </div>
+            <!-- Already in cart modal -->
+            <div class="modal fade" tabindex="-1" id="cartModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Product already added to My Cart!</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="fs-5">{{product.name}}</p>
+                            <p>
+                                <span class="float-left"><strong>MRP</strong>: <del>{{product.mrp}}</del></span>
+                                <span class="float-right"><strong>DP</strong>: {{product.dp}}</span>
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

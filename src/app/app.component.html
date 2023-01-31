@@ -1,6 +1,6 @@
-<app-header></app-header>
+<app-header class="z-1 position-relative"></app-header>
 
-<main class="container" [ngStyle]="{'min-height.px': footerMaxHeight}">
+<main class="container-fluid px-0" [ngStyle]="{'min-height.px': footerMaxHeight}" style="margin-top: -72px;">
     <router-outlet></router-outlet>
 </main>
 <hr class="featurette-divider mt-3">

@@ -1,6 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
-@import url('https://fonts.googleapis.com/css?family=Rubik');
 @import url('https://fonts.googleapis.com/css?family=Century Gothic');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 #_title {
     font-family: Oswald;
@@ -9,26 +10,26 @@
     color: tan !important;
 }
 
-#_zone {
+#_zone, #_header {
     text-shadow: silver 1px 0 10px;
 }
 
-#_extra {
-    font-family: Segoe UI light;
+#_header {
     text-shadow: black 1px 0 10px;
 }
 
-.btn {
+* :not(#_title > span) {
     font-family: Century Gothic;
 }
 
-.card-text, #_title, h4 {
-    text-shadow: black 1px 0 10px;
+#_title {
+    span {
+        font-family: Oswald;
+    }
 }
 
-.card-body {
-    height: 100%;
-    backdrop-filter: blur(3px);
+.card-title {
+    font-family: Montserrat !important;
 }
 
 #banner {
@@ -42,15 +43,4 @@
 #blur {
     height: 100%;
     backdrop-filter: blur(3px);
-}
-
-.carousel-inner {
-    img {
-        height: 40vh;
-    }
-}
-
-h4 {
-    color: white;
-
 }

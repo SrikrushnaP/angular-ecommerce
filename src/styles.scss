@@ -1,5 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
 
-.sim-pointer{
+.sim-pointer {
     cursor: pointer;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: silver;
+    border-radius: 100px;
 }
