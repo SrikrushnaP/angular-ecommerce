@@ -13,12 +13,15 @@ import { ProductCrudComponent } from './product/product-crud/product-crud.compon
 import { CheckoutComponent } from './customer/buyer/checkout/checkout.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { MyCartComponent } from './customer/buyer/my-cart/my-cart.component';
 
 const routes: Routes = [
   { path: "", redirectTo: "/", pathMatch: "full" },
   { path: "", component: HomeComponent },
   { path: "my-profile", component: UserProfileComponent },
   { path: "contact-us", component:ContactUsComponent},
+  { path: "about-us", component: AboutUsComponent },
   //Path/component you want to access before admin login/signin
   {
     path: '', canActivate: [AdminAuthGuardLogin], children: [
@@ -54,6 +57,7 @@ const routes: Routes = [
   {
     path: '', canActivate: [BuyerAuthGaurdService], children: [
       { path: "buyer-dashboard", component: BuyerDashboardComponent },
+      { path: "my-cart", component: MyCartComponent },
       { path: "checkout", component: CheckoutComponent }
     ]
   },

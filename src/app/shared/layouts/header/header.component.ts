@@ -15,16 +15,12 @@ export class HeaderComponent implements OnInit {
 
   constructor(private translate: TranslateService, private router: Router) { }
 
-
-  ngOnInit() {
-    
-    
-  }
+  ngOnInit() { }
 
   ngDoCheck() {
     this.user_role = sessionStorage.getItem("role");
     // console.log(this.user_role);
-    
+
     const user_session_id = sessionStorage.getItem("user_session_id")
     if (user_session_id) {
       this.logged_in = true;
@@ -43,8 +39,8 @@ export class HeaderComponent implements OnInit {
   logOut() {
     sessionStorage.removeItem("user_session_id");
     sessionStorage.removeItem("role");
+    // location.reload()
     this.router.navigateByUrl('/sign-in');
-    location.reload()
   }
 
 }

@@ -126,6 +126,7 @@ export class SigninSignupComponent implements OnInit {
         alert("Invalid")
       }
       console.log(this.user_data);
+      location.reload()
 
     }, error => {
       console.log("My error", error);

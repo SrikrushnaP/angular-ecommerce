@@ -30,7 +30,7 @@ export class Product {
     uploadPhoto: string;
     productDesc: string;
     mrp: number;
-    dp: number;
+    php: number;
     status: boolean;
 }
 

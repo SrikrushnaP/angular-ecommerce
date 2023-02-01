@@ -1,16 +1,137 @@
-<div class="home">
-    <!-- <h1 class="intro">{{ 'intro' | translate }}</h1> -->
-    <h1 class="intro">{{'proj_name' | translate}}</h1>
+<div class="container-fluid p-0" id="banner">
+    <div id="blur">
+        <div class="row mx-5 h-100 align-items-center">
+            <div class="col-sm">
+                <p class="mt-5 pt-5 ms-5 mb-0" id="_title">
+                    <span class="text-white me-2">KICKS</span>
+                    <span class="text-dark" id="_zone">ZONE</span>
+                </p>
+                <a routerLink="/sign-in" class="btn btn-info ms-5 py-2 px-4 fw-bold">
+                    SHOP NOW<i class="fa-solid fa-bag-shopping ms-2"></i></a>
+                <p class="ms-5 text-light pt-2" id="_extra">Get yours now!<i class="fa-regular fa-circle-check ms-2 fa-lg"></i>
+                </p>
+            </div>
+            <div class="col-sm my-auto">
+                <div id="_carouselParent">
+                    <div id="carouselExampleAutoplaying" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://i.pinimg.com/564x/3e/44/db/3e44dbfdd05103c2a017f34b35cf2ee0.jpg"
+                                    class="rounded-4 mx-auto d-block" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h4>Product Category</h4>
+                                    <a routerLink="/sign-in" class="btn btn-dark py-2 px-5 fw-bold">Shop Now</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.pinimg.com/564x/64/17/07/64170791f569899bfed4bd4becd77473.jpg"
+                                    class="rounded-4 mx-auto d-block" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h4>Product Category</h4>
+                                    <a routerLink="/sign-in" class="btn btn-dark py-2 px-5 fw-bold">Shop Now</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.pinimg.com/564x/bb/e2/f8/bbe2f8123d8358976caa41d4b300e43c.jpg"
+                                    class="rounded-4 mx-auto d-block" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h4>Product Category</h4>
+                                    <a routerLink="/sign-in" class="btn btn-dark py-2 px-5 fw-bold">Shop Now</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.pinimg.com/564x/33/ff/0b/33ff0b1834b3eb3cc7c3485601fed723.jpg"
+                                    class="rounded-4 mx-auto d-block" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h4>Product Category</h4>
+                                    <a routerLink="/sign-in" class="btn btn-dark py-2 px-5 fw-bold">Shop Now</a>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://i.pinimg.com/564x/51/ef/d9/51efd920610a8c52144947d70765b15a.jpg"
+                                    class="rounded-4 mx-auto d-block" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h4>Product Category</h4>
+                                    <a routerLink="/sign-in" class="btn btn-dark py-2 px-5 fw-bold">Shop Now</a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<!-- <h1>Another way: <span translate>intro</span></h1> -->
-
-<h3 class="short_desc"><span translate>project_short_desc</span></h3>
-
-<p><a href="https://docs.google.com/document/d/1NdB3SdAbKSFcPooap-ddpHdQQxBDvAieH2bPF4NCLMU/edit?usp=sharing" target="_blank" class="btn btn-primary">{{'view_detail_doc_btn' | translate}}</a>
-</p>
-<p>
-    <a href="https://github.com/srikrushnap" target="_blank" class="btn btn-primary">Github</a>
-    <a href="https://stackoverflow.com/users/5852550/srikrushna?tab=profile" target="_blank" class="btn btn-success">Stackoverflow</a>
-    <a href="https://github.com/srikrushnap" target="_blank" class="btn btn-primary">Linkedin</a>
-</p>
 </div>
+<!--  -->
+<!--  -->
+<!-- <div id="carouselExampleAutoplaying" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://i.pinimg.com/564x/b7/98/09/b79809946b824fa03a2a5eb688d5fd8f.jpg" class="d-block w-100"
+                alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h3>Product Category</h3>
+                <p>Product Name Here - Product Name Here - Product Name Here</p>
+                <a routerLink="/sign-in" class="btn btn-dark py-2 px-5 fw-bold">Shop Now</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://i.pinimg.com/564x/ee/2b/db/ee2bdb7ebfdfa568440b0f24b4648bdd.jpg" class="d-block w-100"
+                alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h3>Product Category</h3>
+                <p>Product Name Here - Product Name Here - Product Name Here</p>
+                <a routerLink="/sign-in" class="btn btn-dark py-2 px-5 fw-bold">Shop Now</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://i.pinimg.com/564x/6e/f0/a7/6ef0a77f798611f722b9557b1012feed.jpg" class="d-block w-100"
+                alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h3>Product Category</h3>
+                <p>Product Name Here - Product Name Here - Product Name Here</p>
+                <a routerLink="/sign-in" class="btn btn-dark py-2 px-5 fw-bold">Shop Now</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://i.pinimg.com/564x/8f/9e/50/8f9e50539699139f925784eacfa6bbc2.jpg" class="d-block w-100"
+                alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h3>Product Category</h3>
+                <p>Product Name Here - Product Name Here - Product Name Here</p>
+                <a routerLink="/sign-in" class="btn btn-dark py-2 px-5 fw-bold">Shop Now</a>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://i.pinimg.com/564x/f9/57/e6/f957e6a7676ad42b2f3a3f993ee96b12.jpg" class="d-block w-100"
+                alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h3>Product Category</h3>
+                <p>Product Name Here - Product Name Here - Product Name Here</p>
+                <a routerLink="/sign-in" class="btn btn-dark py-2 px-5 fw-bold">Shop Now</a>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div> -->
+<!--  -->

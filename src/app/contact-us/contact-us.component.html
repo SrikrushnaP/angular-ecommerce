@@ -1,27 +1,70 @@
-<div class="contact-us">
-        <h1>Love to Hear From You</h1>
-        <div class="row">
-            <div class="col-md-9">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque cumque voluptates vitae qui rem nobis blanditiis, odit quos magni, totam nesciunt, debitis ea facilis voluptatem sint optio. Soluta adipisci officia dicta commodi minus, natus molestiae placeat labore! Quod culpa natus sint odit minima. Maiores sunt repellat ut a pariatur aspernatur.
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d405691.5814439776!2d-122.32199106332915!3d37.40247131407771!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb68ad0cfc739%3A0x7eb356b66bd4b50e!2sSilicon%20Valley%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1567518063798!5m2!1sen!2sin" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+<div class="contact-us container-fluid" style="margin-top: 110px;">
+    <h1 class="text-center">Contact Us</h1>
+    <br>
+    <div class="row p-5 mx-5">
+        <div class="col-sm-8 p-3">
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="floatingInput" placeholder="Roger Twenty">
+                <label for="floatingInput">Name</label>
             </div>
-            <div class="col-md-3">
-                <h3>Postal Address</h3>
-                <p>
-                    Address Line 1
-                    Address Line 2 <br>
-                    City
-                    State
-                    Country <br>
-                    Pin code- 560037
-                </p>
-                <h3>Email</h3>
-                <p><strong>Office:</strong>office@gmail.com</p>
-                <p><strong>Personal:</strong>personal@gmail.com</p>
-                <h3>Phone</h3>
-                <p><strong>Office:</strong>+91-1234567890</p>
-                <p><strong>Work:</strong>+91-1234567891</p>
+            <div class="form-floating mb-3">
+                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                <label for="floatingInput">Email address</label>
             </div>
+            <div class="form-floating mb-3">
+                <textarea class="form-control" placeholder="Enter your message" id="floatingTextarea"></textarea>
+                <label for="floatingTextarea">Message</label>
+            </div>
+            <button class="btn btn-success send-button w-100" id="submit" type="reset" value="SEND">
+                <div class="alt-send-button">
+                    <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+                </div>
+            </button>
         </div>
-        
+        <div class="col-sm p-3" id="_contactInfo">
+            <div class="details">
+                <i class="fa-solid fa-map-location-dot mx-4 fa-2x"></i><span>Pasig City, Philippines</span>
+            </div>
+            <div class="details">
+                <i class="fa-solid fa-phone mx-4 fa-2x"></i><span><a href="tel:1-212-555-5555"
+                        title="Give me a call">(02) 230-4031</a></span>
+            </div>
+            <div class="details">
+                <i class="fa-solid fa-envelope-circle-check mx-4 fa-2x"></i><span><a href="mailto:#"
+                        title="Send me an email">uno.77@gmail.com</a></span>
+            </div>
+            <hr class="border border-secondary">
+            <ul class="social-media-list">
+                <li>
+                    <a href="#" target="_blank" class="contact-icon">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="contact-icon">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="contact-icon">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" target="_blank" class="contact-icon">
+                        <i class="fa fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+            <hr>
+            <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+        </div>
+    </div>
+    <hr class="border border-secondary my-5">
+    <div class="row p-5">
+        <iframe class="p-5"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.24057427197!2d121.05921181477044!3d14.585362981360328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397c81751e0f9d5%3A0xff1378b728feff76!2sSeven%20Seven%20Global%20Services%2C%20Inc.!5e0!3m2!1sen!2sph!4v1674615812246!5m2!1sen!2sph"
+            width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 </div>

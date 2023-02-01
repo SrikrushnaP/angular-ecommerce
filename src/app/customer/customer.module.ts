@@ -6,9 +6,16 @@ import { SigninSignupComponent } from './signin-signup/signin-signup.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { CheckoutComponent } from './buyer/checkout/checkout.component';
+import { MyCartComponent } from './buyer/my-cart/my-cart.component';
 
 @NgModule({
-  declarations: [BuyerDashboardComponent, SellerDashboardComponent, SigninSignupComponent, CheckoutComponent],
+  declarations: [
+    BuyerDashboardComponent,
+    SellerDashboardComponent,
+    SigninSignupComponent,
+    CheckoutComponent,
+    MyCartComponent
+  ],
   imports: [
     CommonModule,
     FormsModule,
